@@ -302,58 +302,197 @@
     </section>
 
     <!-- Implementation Status -->
-    <section class="status-section">
+    <section class="implementation-status-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header fade-in-up">
+                <span class="material-icons section-icon">assignment_turned_in</span>
                 <h2>Implementation Status</h2>
-                <p class="section-subtitle">Current functionalities and development roadmap</p>
+                <p class="section-subtitle">Current development state of platform features and components</p>
             </div>
             
-            <div class="status-grid">
-                <div class="status-category">
-                    <div class="status-header">
-                        <span class="material-icons status-icon completed">check_circle</span>
-                        <h3>Fully Implemented</h3>
-                    </div>
-                    <ul class="status-list">
-                        <li>User management and authentication system</li>
-                        <li>Project management and hospital connections</li>
-                        <li>Visual deep learning model designer</li>
-                        <li>Federated training system with simulation</li>
-                        <li>Real-time monitoring dashboard</li>
-                        <li>Complete REST API for integrations</li>
-                        <li>Notification system</li>
-                    </ul>
+            <div class="status-legend fade-in-up">
+                <div class="legend-item">
+                    <span class="status-badge implemented">
+                        <span class="material-icons">check_circle</span>
+                        Implemented
+                    </span>
+                    <span>Feature is fully developed and tested</span>
                 </div>
-
-                <div class="status-category">
-                    <div class="status-header">
-                        <span class="material-icons status-icon in-progress">construction</span>
-                        <h3>Under Development</h3>
-                    </div>
-                    <ul class="status-list">
-                        <li>Complete frontend for classical Machine Learning</li>
-                        <li>Model download and management system</li>
-                        <li>Integration with real hospital systems</li>
-                        <li>Advanced security protocols</li>
-                        <li>Performance optimization for large volumes</li>
-                        <li>Advanced statistical analysis tools</li>
-                    </ul>
+                <div class="legend-item">
+                    <span class="status-badge in-progress">
+                        <span class="material-icons">schedule</span>
+                        In Progress
+                    </span>
+                    <span>Currently under development</span>
                 </div>
+                <div class="legend-item">
+                    <span class="status-badge planned">
+                        <span class="material-icons">event</span>
+                        Planned
+                    </span>
+                    <span>Scheduled for future development</span>
+                </div>
+            </div>
 
-                <div class="status-category">
-                    <div class="status-header">
-                        <span class="material-icons status-icon planned">schedule</span>
-                        <h3>Planned</h3>
+            <div class="implementation-table fade-in-up delay-1">
+                <h3>Platform Features Status</h3>
+                <div class="status-table">
+                    <div class="table-header">
+                        <div class="table-cell">Platform Feature</div>
+                        <div class="table-cell">Description</div>
+                        <div class="table-cell">Status</div>
+                        <div class="table-cell">Target Date</div>
                     </div>
-                    <ul class="status-list">
-                        <li>Differential Privacy for enhanced protection</li>
-                        <li>Cryptographic Secure Aggregation</li>
-                        <li>Multi-GPU and distributed training support</li>
-                        <li>FHIR standards integration</li>
-                        <li>Multi-user collaboration system</li>
-                        <li>Model explainability tools</li>
-                    </ul>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">dashboard</span>
+                            Web Dashboard
+                        </div>
+                        <div class="table-cell">Main user interface and controls</div>
+                        <div class="table-cell">
+                            <span class="status-badge implemented">
+                                <span class="material-icons">check_circle</span>
+                                Implemented
+                            </span>
+                        </div>
+                        <div class="table-cell">Completed</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">psychology</span>
+                            Federated Learning Core
+                        </div>
+                        <div class="table-cell">Basic FL training and aggregation</div>
+                        <div class="table-cell">
+                            <span class="status-badge implemented">
+                                <span class="material-icons">check_circle</span>
+                                Implemented
+                            </span>
+                        </div>
+                        <div class="table-cell">Completed</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">model_training</span>
+                            Model Studio
+                        </div>
+                        <div class="table-cell">Visual model design and templates</div>
+                        <div class="table-cell">
+                            <span class="status-badge in-progress">
+                                <span class="material-icons">schedule</span>
+                                In Progress
+                            </span>
+                        </div>
+                        <div class="table-cell">Q1 2024</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">storage</span>
+                            Dataset Management
+                        </div>
+                        <div class="table-cell">Data upload, validation, and management</div>
+                        <div class="table-cell">
+                            <span class="status-badge in-progress">
+                                <span class="material-icons">schedule</span>
+                                In Progress
+                            </span>
+                        </div>
+                        <div class="table-cell">Q1 2024</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">notifications</span>
+                            Real-time Notifications
+                        </div>
+                        <div class="table-cell">System alerts and updates</div>
+                        <div class="table-cell">
+                            <span class="status-badge planned">
+                                <span class="material-icons">event</span>
+                                Planned
+                            </span>
+                        </div>
+                        <div class="table-cell">Q2 2024</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">analytics</span>
+                            Advanced Analytics
+                        </div>
+                        <div class="table-cell">Performance metrics and insights</div>
+                        <div class="table-cell">
+                            <span class="status-badge planned">
+                                <span class="material-icons">event</span>
+                                Planned
+                            </span>
+                        </div>
+                        <div class="table-cell">Q3 2024</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">lock</span>
+                            Authentication System
+                        </div>
+                        <div class="table-cell">User login and session management</div>
+                        <div class="table-cell">
+                            <span class="status-badge implemented">
+                                <span class="material-icons">check_circle</span>
+                                Implemented
+                            </span>
+                        </div>
+                        <div class="table-cell">Completed</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">connect_without_contact</span>
+                            Federated Connections
+                        </div>
+                        <div class="table-cell">Secure hospital-to-hospital connections</div>
+                        <div class="table-cell">
+                            <span class="status-badge implemented">
+                                <span class="material-icons">check_circle</span>
+                                Implemented
+                            </span>
+                        </div>
+                        <div class="table-cell">Completed</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">api</span>
+                            REST API
+                        </div>
+                        <div class="table-cell">Complete API for integrations</div>
+                        <div class="table-cell">
+                            <span class="status-badge implemented">
+                                <span class="material-icons">check_circle</span>
+                                Implemented
+                            </span>
+                        </div>
+                        <div class="table-cell">Completed</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <span class="material-icons">architecture</span>
+                            Visual Model Designer
+                        </div>
+                        <div class="table-cell">Drag-and-drop model creation</div>
+                        <div class="table-cell">
+                            <span class="status-badge in-progress">
+                                <span class="material-icons">schedule</span>
+                                In Progress
+                            </span>
+                        </div>
+                        <div class="table-cell">Q1 2024</div>
+                    </div>
                 </div>
             </div>
         </div>
