@@ -188,6 +188,33 @@ body {
     color: var(--primary-color);
 }
 
+.nav-brand-logo {
+    height: 1.5rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-brand-text {
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand-text .med {
+    color: var(--primary-color);
+}
+
+.nav-brand-text .net {
+    color: var(--secondary-color);
+}
+
+.med {
+    color: var(--primary-color);
+}
+
+.net {
+    color: var(--secondary-color);
+}
+
 .nav-icon {
     font-size: 1.75rem;
 }
@@ -382,6 +409,26 @@ body {
     line-height: var(--line-height-tight);
     letter-spacing: -0.025em;
     text-wrap: balance;
+    text-align: center;
+}
+
+.hero-title-logo {
+    height: 3rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.hero-title-text {
+    display: flex;
+    align-items: center;
+}
+
+.hero-title-text .med {
+    color: var(--primary-color);
+}
+
+.hero-title-text .net {
+    color: var(--secondary-color);
 }
 
 .hero-subtitle {
