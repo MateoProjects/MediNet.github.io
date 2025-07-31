@@ -215,6 +215,14 @@ body {
     color: var(--secondary-color);
 }
 
+.hero-title .med {
+    color: var(--primary-color) !important;
+}
+
+.hero-title .net {
+    color: var(--secondary-color) !important;
+}
+
 .nav-icon {
     font-size: 1.75rem;
 }
