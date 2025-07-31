@@ -1,4 +1,4 @@
-# MediNet Platform - Comprehensive User Guide
+# MedNet Platform - Comprehensive User Guide
 
 ## 📋 Table of Contents
 
@@ -20,7 +20,7 @@
 
 ## 🌟 Platform Overview
 
-**MediNet** is a comprehensive federated learning platform designed specifically for medical institutions such as hospitals and laboratories. The platform enables secure, distributed machine learning training across multiple healthcare organizations while maintaining data privacy and compliance with medical data regulations.
+**MedNet** is a comprehensive federated learning platform designed specifically for medical institutions such as hospitals and laboratories. The platform enables secure, distributed machine learning training across multiple healthcare organizations while maintaining data privacy and compliance with medical data regulations.
 
 ### Key Capabilities:
 - **Federated Learning**: Train models across multiple institutions without data sharing
@@ -40,7 +40,7 @@
 - Access credentials provided by system administrator
 
 ### First Time Access
-1. Navigate to the MediNet platform URL
+1. Navigate to the MedNet platform URL
 2. Click on "Register" if you don't have an account
 3. Complete the registration process
 4. Verify your account through email (if required)
@@ -594,14 +594,14 @@ The model management and download functionality is currently under active develo
 
 ## 🔄 Complete Workflow Guide
 
-This section provides a step-by-step guide for new users to successfully train their first deep learning model using the MediNet federated learning platform.
+This section provides a step-by-step guide for new users to successfully train their first deep learning model using the MedNet federated learning platform.
 
 ### Step-by-Step Deep Learning Training Workflow
 
 #### Phase 1: Account Setup and Initial Access
 
 **Step 1: User Registration**
-1. Navigate to the MediNet platform homepage
+1. Navigate to the MedNet platform homepage
 2. Click "Register" button in the top navigation
 3. Fill out the registration form:
    - Choose a unique username

@@ -1,11 +1,11 @@
-# Imágenes Requeridas para MediNet Documentation
+# Imágenes Requeridas para MedNet Documentation
 
 Esta carpeta debe contener las siguientes imágenes para que la documentación web funcione correctamente. Simplemente copia y pega las imágenes con estos nombres exactos:
 
 ## Página Principal (index.html)
 
 ### Hero Section
-- `medinet-main-dashboard.png` - Dashboard principal de MediNet mostrando entrenamiento federado en tiempo real
+- `mednet-main-dashboard.png` - Dashboard principal de MedNet mostrando entrenamiento federado en tiempo real (Done)
 
 ### Solution Section  
 - `federated-learning-diagram.png` - Diagrama del flujo de aprendizaje federado mostrando cómo cada hospital entrena localmente y solo se comparten actualizaciones del modelo
@@ -65,7 +65,7 @@ Esta carpeta debe contener las siguientes imágenes para que la documentación w
 ### Diseñador de Modelos
 - `model-designer-entry.png` - Pantalla inicial del diseñador con opciones de templates y creación personalizada
 - `model-designer-interface-full.png` - Vista completa del diseñador mostrando paleta de capas, canvas de diseño y panel de configuración
-- `model-configuration-panel.png` - Panel de configuración avanzada con optimizadores, funciones de pérdida e hiperparámetros
+- `model-configuration-panel.png` - Panel de configuración avanzada con optimizadores, funciones de pérdida e hiperparámetros 
 
 ### Entrenamiento Federado
 - `training-configuration.png` - Panel de configuración de parámetros federados y opciones avanzadas
@@ -119,7 +119,7 @@ Esta carpeta debe contener las siguientes imágenes para que la documentación w
 ```
 images/
 ├── README.md (este archivo)
-├── medinet-main-dashboard.png
+├── mednet-main-dashboard.png
 ├── federated-learning-diagram.png
 ├── dashboard-preview.png
 ├── model-designer-preview.png

@@ -1,8 +1,8 @@
-# MediNet - Casos d'Ús Mèdics
+# MedNet - Casos d'Ús Mèdics
 
 ## Introducció
 
-MediNet està dissenyat per abordar reptes reals del sector sanitari mitjançant l'aprenentatge federat. Aquest document presenta casos d'ús concrets que demostren el valor i l'aplicabilitat de la plataforma en entorns mèdics reals.
+MedNet està dissenyat per abordar reptes reals del sector sanitari mitjançant l'aprenentatge federat. Aquest document presenta casos d'ús concrets que demostren el valor i l'aplicabilitat de la plataforma en entorns mèdics reals.
 
 ## Cas d'Ús 1: Diagnòstic Col·laboratiu de Malalties Cardíaques
 
@@ -14,7 +14,7 @@ Les malalties cardiovasculars són la principal causa de mort a nivell mundial. 
 **Objectiu**: Crear un model col·laboratiu per predir el risc cardiovascular
 **Dades**: ECGs, anàlisis de sang, historial mèdic, factors de risc
 
-### Implementació amb MediNet
+### Implementació amb MedNet
 
 #### Fase 1: Configuració del Projecte
 - **Hospital Universitari A** (líder) crea el projecte "CardioRisk Consortium"
@@ -59,7 +59,7 @@ La diabetis tipus 2 sovint es diagnostica tard, quan ja hi ha complicacions. La 
 **Objectiu**: Model predictiu per screening de diabetis
 **Dades**: Anàlisis rutinàries, IMC, antecedents familiars, estil de vida
 
-### Workflow amb MediNet
+### Workflow amb MedNet
 
 #### 1. Preparació de Dades
 ```
@@ -262,7 +262,7 @@ Resposta tractament   | 2,100   | 12       | JSON
 
 ---
 
-## Beneficis Transversals de MediNet
+## Beneficis Transversals de MedNet
 
 ### 1. Científics i Clínics
 - **Models més robustos** gràcies a major diversitat de dades
@@ -312,4 +312,4 @@ Resposta tractament   | 2,100   | 12       | JSON
 
 ---
 
-Aquests casos d'ús demostren el potencial transformador de MediNet per millorar la qualitat assistencial, accelerar la investigació mèdica i democratitzar l'accés a tecnologies d'IA avançades en el sector sanitari, tot mantenint els més alts estàndards de privacitat i seguretat. 
+Aquests casos d'ús demostren el potencial transformador de MedNet per millorar la qualitat assistencial, accelerar la investigació mèdica i democratitzar l'accés a tecnologies d'IA avançades en el sector sanitari, tot mantenint els més alts estàndards de privacitat i seguretat. 

@@ -1,6 +1,6 @@
-# MediNet - Documentación Web
+# MedNet - Documentación Web
 
-Documentación web completa para MediNet, la plataforma de aprendizaje federado diseñada específicamente para el sector sanitario.
+Documentación web completa para MedNet, la plataforma de aprendizaje federado diseñada específicamente para el sector sanitario.
 
 ## 🌐 Ver la Documentación Online
 
@@ -13,8 +13,8 @@ https://[tu-usuario].github.io/[nombre-repositorio]/
 ## 📁 Estructura del Proyecto
 
 ```
-medinet-docs/
-├── index.html              # Main page - MediNet presentation
+mednet-docs/
+├── index.html              # Main page - MedNet presentation
 ├── features.html            # Detailed platform features
 ├── installation.html        # Complete installation guide step by step
 ├── security.html            # Security measures and implementation status
@@ -121,7 +121,7 @@ La documentación requiere imágenes específicas para ser completamente funcion
 ## 📖 Contenido de la Documentación
 
 ### 🏠 [index.html] - Página Principal
-- Presentación de MediNet y su propósito
+- Presentación de MedNet y su propósito
 - Problemas que resuelve en el sector sanitario
 - Solución de aprendizaje federado
 - Tecnologías utilizadas
@@ -196,7 +196,7 @@ El archivo `assets/js/main.js` incluye:
 
 The documentation includes consistent navigation between pages:
 
-- **Home**: General presentation of MediNet
+- **Home**: General presentation of MedNet
 - **Features**: Detailed technical functionalities
 - **Installation**: Complete installation and configuration guide
 - **Security**: Security measures and implementation status
@@ -223,7 +223,7 @@ The documentation includes consistent navigation between pages:
 
 ## 📄 Licencia
 
-Esta documentación está diseñada para ser usada con el proyecto MediNet. Sigue las mismas licencias y términos que el proyecto principal.
+Esta documentación está diseñada para ser usada con el proyecto MedNet. Sigue las mismas licencias y términos que el proyecto principal.
 
 ## 🤝 Contribuciones
 
@@ -238,4 +238,4 @@ Para contribuir a la documentación:
 
 ---
 
-**MediNet** - Transformando la colaboración médica a través del aprendizaje federado.
+**MedNet** - Transformando la colaboración médica a través del aprendizaje federado.

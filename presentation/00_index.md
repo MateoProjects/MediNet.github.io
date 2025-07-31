@@ -1,16 +1,16 @@
-# MediNet - Documentació de Presentació
+# MedNet - Documentació de Presentació
 
 ## Índex de Continguts
 
-Aquesta documentació de presentació proporciona una visió completa i detallada de la plataforma MediNet d'aprenentatge federat per al sector sanitari.
+Aquesta documentació de presentació proporciona una visió completa i detallada de la plataforma MedNet d'aprenentatge federat per al sector sanitari.
 
 ---
 
 ## 📋 Documentació Executiva
 
 ### [01. Resum Executiu](01_executive_summary.md)
-**Visió general de MediNet, problema que resol i beneficis clau**
-- Què és MediNet i per què és important
+**Visió general de MedNet, problema que resol i beneficis clau**
+- Què és MedNet i per què és important
 - Reptes del sector sanitari que aborda
 - Funcionalitats principals i diferenciadors
 - Impacte esperat i beneficis per stakeholders
@@ -21,7 +21,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 ## 👥 Documentació d'Usuari
 
 ### [02. Guia d'Usuari Completa](02_user_guide.md)
-**Manual detallat per utilitzar totes les funcionalitats de MediNet**
+**Manual detallat per utilitzar totes les funcionalitats de MedNet**
 - Registre i autenticació d'usuaris
 - Gestió de projectes hospitalaris
 - Connexions federades amb hospitals
@@ -35,7 +35,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 ## 🏗️ Documentació Tècnica
 
 ### [03. Arquitectura Tècnica](03_technical_architecture.md)
-**Disseny tècnic detallat de la plataforma MediNet**
+**Disseny tècnic detallat de la plataforma MedNet**
 - Arquitectura del sistema i components principals
 - Stack tecnològic utilitzat (Django, Flower, PyTorch)
 - Patrons de disseny implementats
@@ -44,7 +44,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 - Roadmap tècnic futur
 
 ### [04. Referència de l'API REST](04_api_reference.md)
-**Documentació completa de l'API REST de MediNet**
+**Documentació completa de l'API REST de MedNet**
 - Endpoints per gestió de models
 - APIs d'entrenament federat
 - Gestió de connexions i datasets
@@ -57,7 +57,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 ## 🎯 Casos d'Ús i Escenaris
 
 ### [05. Casos d'Ús Mèdics](05_medical_use_cases.md) *(Creat a continuació)*
-**Escenaris reals d'aplicació de MediNet en l'entorn sanitari**
+**Escenaris reals d'aplicació de MedNet en l'entorn sanitari**
 - Diagnòstic col·laboratiu de malalties cardíaques
 - Detecció precoç de diabetis tipus 2
 - Anàlisi d'imatges mèdiques (radiologia)
@@ -100,7 +100,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 ## 🚀 Desplegament i Integració
 
 ### [09. Guia de Desplegament](09_deployment_guide.md) *(Creat a continuació)*
-**Instruccions per desplegar MediNet en producció**
+**Instruccions per desplegar MedNet en producció**
 - Requisits de sistema i infraestructura
 - Configuració d'entorns de desenvolupament i producció
 - Integració amb sistemes hospitalaris (HIS/EMR)
@@ -150,7 +150,7 @@ Aquesta documentació de presentació proporciona una visió completa i detallad
 
 ## 📞 Contacte i Suport
 
-Per a preguntes sobre aquesta documentació o MediNet:
+Per a preguntes sobre aquesta documentació o MedNet:
 - **Documentació Tècnica**: Revisar la secció d'arquitectura
 - **Suport d'Usuari**: Consultar la guia de l'usuari
 - **Problemes Tècnics**: Contactar l'equip de desenvolupament
@@ -158,4 +158,4 @@ Per a preguntes sobre aquesta documentació o MediNet:
 
 ---
 
-*Aquesta documentació és un document viu que s'actualitza regularment per reflectir l'evolució de la plataforma MediNet.* 
+*Aquesta documentació és un document viu que s'actualitza regularment per reflectir l'evolució de la plataforma MedNet.* 

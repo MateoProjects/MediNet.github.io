@@ -1,8 +1,8 @@
-# MediNet - Arquitectura Tècnica
+# MedNet - Arquitectura Tècnica
 
 ## Vista General del Sistema
 
-MediNet és una plataforma d'aprenentatge federat dissenyada amb una arquitectura modular i escalable que permet la col·laboració segura entre institucions mèdiques.
+MedNet és una plataforma d'aprenentatge federat dissenyada amb una arquitectura modular i escalable que permet la col·laboració segura entre institucions mèdiques.
 
 ## Arquitectura del Sistema
 
@@ -243,7 +243,7 @@ python manage.py collectstatic
 python manage.py migrate
 
 # Gunicorn + Nginx
-gunicorn djangoMediNet.wsgi:application
+gunicorn djangoMedNet.wsgi:application
 ```
 
 ### Docker (Futur)
@@ -254,7 +254,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 8000
-CMD ["gunicorn", "djangoMediNet.wsgi:application"]
+CMD ["gunicorn", "djangoMedNet.wsgi:application"]
 ```
 
 ## Monitoratge i Logging
@@ -317,7 +317,7 @@ CMD ["gunicorn", "djangoMediNet.wsgi:application"]
 
 ## Conclusions
 
-L'arquitectura de MediNet està dissenyada per ser:
+L'arquitectura de MedNet està dissenyada per ser:
 - **Modular**: Components independents i intercanviables
 - **Escalable**: Capaç de créixer amb les necessitats
 - **Segura**: Protecció de dades sensibles

@@ -1,7 +1,7 @@
-# GitHub Pages Configuration for MediNet Documentation
+# GitHub Pages Configuration for MedNet Documentation
 
 # Site settings
-title: MediNet Documentation
+title: MedNet Documentation
 description: Plataforma de aprendizaje federado para el sector sanitario
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -36,14 +36,14 @@ include:
 
 # SEO and metadata
 lang: es
-author: MediNet Team
+author: MedNet Team
 twitter:
   username: medinet
   card: summary_large_image
 
 # Social links
 social:
-  name: MediNet
+  name: MedNet
   links:
     - https://github.com/yourusername/medinet
 

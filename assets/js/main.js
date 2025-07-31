@@ -1,18 +1,59 @@
-// Main JavaScript for MediNet Documentation Site
+// Main JavaScript for MedNet Documentation Site
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation Toggle
+    // Enhanced Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
     
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('nav-menu-open');
+            const isOpen = navMenu.classList.contains('nav-menu-open');
             
-            // Toggle icon
+            // Toggle menu state
+            navMenu.classList.toggle('nav-menu-open');
+            document.body.classList.toggle('nav-open');
+            
+            // Toggle icon with smooth transition
             const icon = navToggle.querySelector('.material-icons');
             if (icon) {
-                icon.textContent = navMenu.classList.contains('nav-menu-open') ? 'close' : 'menu';
+                icon.style.transform = 'rotate(180deg)';
+                setTimeout(() => {
+                    icon.textContent = navMenu.classList.contains('nav-menu-open') ? 'close' : 'menu';
+                    icon.style.transform = 'rotate(0deg)';
+                }, 150);
+            }
+            
+            // Add aria attributes for accessibility
+            navToggle.setAttribute('aria-expanded', !isOpen);
+            navMenu.setAttribute('aria-hidden', isOpen);
+        });
+        
+        // Close menu when clicking nav links
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('nav-menu-open');
+                document.body.classList.remove('nav-open');
+                
+                const icon = navToggle.querySelector('.material-icons');
+                if (icon) {
+                    icon.textContent = 'menu';
+                }
+                
+                navToggle.setAttribute('aria-expanded', 'false');
+                navMenu.setAttribute('aria-hidden', 'true');
+            });
+        });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('nav-menu-open')) {
+                navMenu.classList.remove('nav-menu-open');
+                document.body.classList.remove('nav-open');
+                navToggle.focus();
+                
+                const icon = navToggle.querySelector('.material-icons');
+                if (icon) icon.textContent = 'menu';
             }
         });
     }
@@ -36,151 +77,107 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Navbar scroll effect
+    // Enhanced Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
-            navbar.classList.add('navbar-scrolled');
+            navbar.classList.add('scrolled');
         } else {
-            navbar.classList.remove('navbar-scrolled');
+            navbar.classList.remove('scrolled');
         }
     });
     
-    // Advanced Animation on Scroll System
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-    
-    const animationObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add visible class for slide-up animations
-                if (entry.target.classList.contains('slide-up-on-scroll')) {
-                    entry.target.classList.add('visible');
-                }
-                
-                // Trigger fade-in animations
-                if (entry.target.classList.contains('fade-in-up') || 
-                    entry.target.classList.contains('fade-in-left') || 
-                    entry.target.classList.contains('fade-in-right') ||
-                    entry.target.classList.contains('scale-in')) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-                
-                // Handle stagger animations
-                if (entry.target.classList.contains('stagger-animation')) {
-                    const children = entry.target.children;
-                    Array.from(children).forEach((child, index) => {
-                        setTimeout(() => {
-                            child.style.opacity = '1';
-                            child.style.transform = 'translateY(0)';
-                        }, index * 100);
-                    });
-                }
-                
-                // Generic animate-in class
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll(`
-        .problem-card, .tech-category, .feature-preview, .solution-content,
-        .fade-in-up, .fade-in-left, .fade-in-right, .scale-in, .rotate-in,
-        .slide-up-on-scroll, .stagger-animation, .requirement-card,
-        .install-step, .client-step, .test-scenario, .trouble-item
-    `);
-    
-    animateElements.forEach(el => {
-        // Pause animations initially
-        if (el.classList.contains('fade-in-up') || 
-            el.classList.contains('fade-in-left') || 
-            el.classList.contains('fade-in-right') ||
-            el.classList.contains('scale-in') ||
-            el.classList.contains('rotate-in')) {
-            el.style.animationPlayState = 'paused';
-        }
+    // Safe Animation System - Only for explicitly marked elements
+    if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -30px 0px'
+        };
         
-        animationObserver.observe(el);
-    });
+        const animationObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.hasAttribute('data-animate')) {
+                    entry.target.classList.add('animate-in');
+                    animationObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Only observe elements that are explicitly marked for animation
+        const animateElements = document.querySelectorAll('[data-animate]');
+        animateElements.forEach(el => animationObserver.observe(el));
+    } else {
+        // If reduced motion is preferred, make sure all elements are immediately visible
+        const potentialAnimateElements = document.querySelectorAll('[data-animate]');
+        potentialAnimateElements.forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+            el.classList.add('animate-in');
+        });
+    }
     
-    // Parallax effect for hero sections
+    // Subtle parallax effect for hero sections (disabled on mobile)
     const heroSections = document.querySelectorAll('.hero');
+    const isMobile = window.innerWidth < 768;
     
-    function updateParallax() {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        
-        heroSections.forEach(hero => {
-            const heroImage = hero.querySelector('.hero-image, .hero-img');
-            if (heroImage) {
-                heroImage.style.transform = `translateY(${rate}px)`;
-            }
-        });
-    }
-    
-    // Throttled scroll for performance
-    let ticking = false;
-    
-    function requestTick() {
-        if (!ticking) {
-            requestAnimationFrame(updateParallax);
-            ticking = true;
+    if (!isMobile && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.2; // Reduced intensity
+            
+            heroSections.forEach(hero => {
+                const heroImage = hero.querySelector('.hero-image, .hero-img');
+                if (heroImage && scrolled < window.innerHeight) { // Only within viewport
+                    heroImage.style.transform = `translateY(${rate}px)`;
+                }
+            });
         }
-    }
-    
-    window.addEventListener('scroll', () => {
-        requestTick();
-        ticking = false;
-    });
-    
-    // Magnetic effect for buttons
-    const magneticElements = document.querySelectorAll('.btn, .nav-link, .card');
-    
-    magneticElements.forEach(el => {
-        el.addEventListener('mousemove', (e) => {
-            const rect = el.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            
-            const moveX = x * 0.1;
-            const moveY = y * 0.1;
-            
-            el.style.transform = `translate(${moveX}px, ${moveY}px)`;
-        });
         
-        el.addEventListener('mouseleave', () => {
-            el.style.transform = 'translate(0, 0)';
-        });
-    });
-    
-    // Typing animation for hero titles
-    function typeWriter(element, text, speed = 100) {
-        let i = 0;
-        element.innerHTML = '';
+        // Throttled scroll for performance
+        let ticking = false;
         
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
             }
         }
         
-        type();
+        window.addEventListener('scroll', () => {
+            requestTick();
+            ticking = false;
+        });
     }
     
-    // Initialize typing animation for main hero
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle && window.location.pathname.includes('index.html') || window.location.pathname === '/') {
-        const originalText = heroTitle.textContent;
-        setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
-        }, 500);
+    // Subtle magnetic effect for buttons (disabled on touch devices)
+    if (!('ontouchstart' in window) && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        const magneticElements = document.querySelectorAll('.btn:not(.nav-link)');
+        
+        magneticElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transition = 'transform 0.1s ease-out';
+            });
+            
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                const moveX = x * 0.05; // Much more subtle
+                const moveY = y * 0.05;
+                
+                el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                el.style.transition = 'transform 0.2s ease-out';
+                el.style.transform = 'translate(0, 0)';
+            });
+        });
     }
+    
+    // Typing animation removed - was annoying and interfered with readability
     
     // Copy code functionality (for future code blocks)
     const codeBlocks = document.querySelectorAll('pre code');
@@ -412,7 +409,110 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+    
+    // Image Modal/Lightbox Functionality
+    initImageModal();
 });
+
+// Image Modal/Lightbox System
+function initImageModal() {
+    // Create modal HTML structure
+    const modalHTML = `
+        <div id="imageModal" class="image-modal">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Cerrar imagen">×</button>
+                <img class="modal-image" src="" alt="">
+                <div class="modal-caption"></div>
+            </div>
+        </div>
+    `;
+    
+    // Insert modal into body
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    
+    const modal = document.getElementById('imageModal');
+    const modalImage = modal.querySelector('.modal-image');
+    const modalCaption = modal.querySelector('.modal-caption');
+    const closeButton = modal.querySelector('.modal-close');
+    
+    // Make existing images zoomable
+    const images = document.querySelectorAll('img:not(.modal-image)');
+    images.forEach(img => {
+        // Skip images that are too small or are icons
+        if (img.width < 100 || img.height < 100 || img.classList.contains('nav-icon')) {
+            return;
+        }
+        
+        // Add zoomable class and click handler
+        img.classList.add('zoomable');
+        img.addEventListener('click', () => openImageModal(img));
+        
+        // Add keyboard support
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', 'Hacer clic para ampliar imagen');
+        
+        img.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openImageModal(img);
+            }
+        });
+    });
+    
+    // Function to open modal with image
+    function openImageModal(img) {
+        modalImage.src = img.src;
+        modalImage.alt = img.alt || 'Imagen ampliada';
+        
+        // Set caption from alt text or data attribute
+        const caption = img.getAttribute('data-caption') || img.alt || '';
+        modalCaption.textContent = caption;
+        modalCaption.style.display = caption ? 'block' : 'none';
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.classList.add('modal-open');
+        
+        // Focus close button for accessibility
+        closeButton.focus();
+    }
+    
+    // Function to close modal
+    function closeImageModal() {
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        
+        // Clear image src to free memory
+        setTimeout(() => {
+            if (!modal.classList.contains('active')) {
+                modalImage.src = '';
+            }
+        }, 300);
+    }
+    
+    // Close button event
+    closeButton.addEventListener('click', closeImageModal);
+    
+    // Close on modal background click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeImageModal();
+        }
+    });
+    
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeImageModal();
+        }
+    });
+    
+    // Prevent scrolling when modal is open
+    modal.addEventListener('wheel', (e) => {
+        e.preventDefault();
+    }, { passive: false });
+}
 
 // Theme toggle functionality (for future dark mode)
 function toggleTheme() {
