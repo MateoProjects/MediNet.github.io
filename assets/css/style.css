@@ -199,28 +199,28 @@ body {
     align-items: center;
 }
 
-.nav-brand-text .med {
-    color: var(--primary-color);
-}
-
-.nav-brand-text .net {
+.nav-brand-text .synap {
     color: var(--secondary-color);
 }
 
-.med {
+.nav-brand-text .netica {
     color: var(--primary-color);
 }
 
-.net {
+.synap {
     color: var(--secondary-color);
 }
 
-.hero-title .med {
-    color: var(--primary-color) !important;
+.netica {
+    color: var(--primary-color);
 }
 
-.hero-title .net {
+.hero-title .synap {
     color: var(--secondary-color) !important;
+}
+
+.hero-title .netica {
+    color: var(--primary-color) !important;
 }
 
 .nav-icon {
@@ -431,12 +431,12 @@ body {
     align-items: center;
 }
 
-.hero-title-text .med {
-    color: var(--primary-color);
+.hero-title-text .synap {
+    color: var(--secondary-color);
 }
 
-.hero-title-text .net {
-    color: var(--secondary-color);
+.hero-title-text .netica {
+    color: var(--primary-color);
 }
 
 .hero-subtitle {
@@ -1101,12 +1101,12 @@ body {
     font-weight: 700;
 }
 
-.footer-brand-text .med {
-    color: var(--primary-color);
+.footer-brand-text .synap {
+    color: var(--secondary-color);
 }
 
-.footer-brand-text .net {
-    color: var(--secondary-color);
+.footer-brand-text .netica {
+    color: var(--primary-color);
 }
 
 .footer-section h4 {

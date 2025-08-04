@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-MedNet is a static documentation website for a federated learning platform designed for healthcare institutions. The site is built as a GitHub Pages-compatible static site using modern HTML5, CSS3, and vanilla JavaScript.
+SynapNetica is a static documentation website for a federated learning platform designed for healthcare institutions. The site is built as a GitHub Pages-compatible static site using modern HTML5, CSS3, and vanilla JavaScript.
 
 ## Architecture & Structure
 

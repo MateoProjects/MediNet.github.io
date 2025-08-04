@@ -1,8 +1,8 @@
-# MedNet - Resum Executiu
+# SynapNetica - Resum Executiu
 
-## Què és MedNet?
+## Què és SynapNetica?
 
-**MedNet** és una plataforma innovadora d'aprenentatge federat dissenyada específicament per al sector sanitari que permet a institucions mèdiques col·laborar en l'entrenament de models d'intel·ligència artificial sense compartir dades sensibles dels pacients.
+**SynapNetica** és una plataforma innovadora d'aprenentatge federat dissenyada específicament per al sector sanitari que permet a institucions mèdiques col·laborar en l'entrenament de models d'intel·ligència artificial sense compartir dades sensibles dels pacients.
 
 ## Problema que Resol
 
@@ -12,8 +12,8 @@
 - **Models Poc Representatius**: Cada hospital entrena models amb les seves pròpies dades limitades
 - **Manca de Col·laboració**: No existeix una manera segura de col·laborar en projectes d'IA mèdica
 
-### La Solució MedNet:
-MedNet utiliza **aprenentatge federat** per permetre que múltiples hospitals entrenen un model conjunt mantenint les seves dades localitzades i segures.
+### La Solució SynapNetica:
+SynapNetica utiliza **aprenentatge federat** per permetre que múltiples hospitals entrenen un model conjunt mantenint les seves dades localitzades i segures.
 
 ## Funcionalitats Principals
 
@@ -127,4 +127,4 @@ MedNet utiliza **aprenentatge federat** per permetre que múltiples hospitals en
 
 ---
 
-*MedNet representa el futur de la col·laboració mèdica, on la tecnologia serveix per unir institucions mantenint la privacitat i seguretat com a prioritats absolutes.* 
+*SynapNetica representa el futur de la col·laboració mèdica, on la tecnologia serveix per unir institucions mantenint la privacitat i seguretat com a prioritats absolutes.* 

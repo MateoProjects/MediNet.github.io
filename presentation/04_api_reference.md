@@ -1,12 +1,12 @@
-# MedNet - Referència de l'API REST
+# SynapNetica - Referència de l'API REST
 
 ## Introducció
 
-L'API REST de MedNet proporciona endpoints per gestionar totes les funcionalitats de la plataforma d'aprenentatge federat. Aquesta documentació detalla tots els endpoints disponibles, paràmetres, respostes i exemples d'ús.
+L'API REST de SynapNetica proporciona endpoints per gestionar totes les funcionalitats de la plataforma d'aprenentatge federat. Aquesta documentació detalla tots els endpoints disponibles, paràmetres, respostes i exemples d'ús.
 
 ## Autenticació
 
-Tots els endpoints requereixen autenticació excepte els endpoints públics. MedNet suporta autenticació basada en sessió de Django.
+Tots els endpoints requereixen autenticació excepte els endpoints públics. SynapNetica suporta autenticació basada en sessió de Django.
 
 ### Headers Requerits
 ```http
@@ -586,7 +586,7 @@ X-RateLimit-Reset: 1640995200
 
 ## Webhooks (Futur)
 
-MedNet planeja suportar webhooks per notificar esdeveniments:
+SynapNetica planeja suportar webhooks per notificar esdeveniments:
 
 ### Esdeveniments Disponibles
 - `training.started`
@@ -612,18 +612,18 @@ MedNet planeja suportar webhooks per notificar esdeveniments:
 
 ### Python SDK (Planificat)
 ```python
-from medinet_client import MedNetClient
+from medinet_client import SynapNeticaClient
 
-client = MedNetClient(api_key='your_api_key')
+client = SynapNeticaClient(api_key='your_api_key')
 models = client.models.list()
 training_job = client.training.start(model_id=1, datasets=[...])
 ```
 
 ### JavaScript SDK (Planificat)
 ```javascript
-import { MedNetClient } from 'mednet-js';
+import { SynapNeticaClient } from 'mednet-js';
 
-const client = new MedNetClient('your_api_key');
+const client = new SynapNeticaClient('your_api_key');
 const models = await client.models.list();
 const job = await client.training.start({
   modelId: 1,

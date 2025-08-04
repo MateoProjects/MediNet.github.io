@@ -1,13 +1,13 @@
-# MedNet - Guia d'Usuari Completa
+# SynapNetica - Guia d'Usuari Completa
 
 ## Introducció
 
-Aquesta guia t'ajudarà a utilitzar totes les funcionalitats de MedNet, des del registre inicial fins a l'entrenament de models d'intel·ligència artificial federats.
+Aquesta guia t'ajudarà a utilitzar totes les funcionalitats de SynapNetica, des del registre inicial fins a l'entrenament de models d'intel·ligència artificial federats.
 
 ## 1. Registre i Autenticació
 
 ### Crear un Compte
-1. Visita la pàgina principal de MedNet
+1. Visita la pàgina principal de SynapNetica
 2. Fes clic a "Registrar-se"
 3. Omple el formulari amb:
    - Nom d'usuari
@@ -296,4 +296,4 @@ Després de completar un entrenament:
 
 ---
 
-Aquesta guia cobreix totes les funcionalitats principals de MedNet. Per a informació més tècnica, consulta la documentació d'API o contacta amb el suport tècnic. 
+Aquesta guia cobreix totes les funcionalitats principals de SynapNetica. Per a informació més tècnica, consulta la documentació d'API o contacta amb el suport tècnic. 

@@ -1,4 +1,4 @@
-// Main JavaScript for MedNet Documentation Site
+// Main JavaScript for SynapNetica Documentation Site
 
 document.addEventListener('DOMContentLoaded', function() {
     // Enhanced Mobile Navigation Toggle

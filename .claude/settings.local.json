@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:brge.isglobal.org)"
+      "WebFetch(domain:brge.isglobal.org)",
+      "Bash(for file in *.html)",
+      "Bash(do echo \"Processing $file\")",
+      "Bash(done)"
     ],
     "deny": []
   }

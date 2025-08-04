@@ -1,11 +1,11 @@
-# Imágenes Requeridas para MedNet Documentation
+# Imágenes Requeridas para SynapNetica Documentation
 
 Esta carpeta debe contener las siguientes imágenes para que la documentación web funcione correctamente. Simplemente copia y pega las imágenes con estos nombres exactos:
 
 ## Página Principal (index.html)
 
 ### Hero Section
-- `mednet-main-dashboard.png` - Dashboard principal de MedNet mostrando entrenamiento federado en tiempo real (Done)
+- `mednet-main-dashboard.png` - Dashboard principal de SynapNetica mostrando entrenamiento federado en tiempo real (Done)
 
 ### Solution Section  
 - `federated-learning-diagram.png` - Diagrama del flujo de aprendizaje federado mostrando cómo cada hospital entrena localmente y solo se comparten actualizaciones del modelo

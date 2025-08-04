@@ -1,8 +1,8 @@
-# MedNet - Arquitectura Tècnica
+# SynapNetica - Arquitectura Tècnica
 
 ## Vista General del Sistema
 
-MedNet és una plataforma d'aprenentatge federat dissenyada amb una arquitectura modular i escalable que permet la col·laboració segura entre institucions mèdiques.
+SynapNetica és una plataforma d'aprenentatge federat dissenyada amb una arquitectura modular i escalable que permet la col·laboració segura entre institucions mèdiques.
 
 ## Arquitectura del Sistema
 
@@ -243,7 +243,7 @@ python manage.py collectstatic
 python manage.py migrate
 
 # Gunicorn + Nginx
-gunicorn djangoMedNet.wsgi:application
+gunicorn djangoSynapNetica.wsgi:application
 ```
 
 ### Docker (Futur)
@@ -254,7 +254,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 8000
-CMD ["gunicorn", "djangoMedNet.wsgi:application"]
+CMD ["gunicorn", "djangoSynapNetica.wsgi:application"]
 ```
 
 ## Monitoratge i Logging
@@ -317,7 +317,7 @@ CMD ["gunicorn", "djangoMedNet.wsgi:application"]
 
 ## Conclusions
 
-L'arquitectura de MedNet està dissenyada per ser:
+L'arquitectura de SynapNetica està dissenyada per ser:
 - **Modular**: Components independents i intercanviables
 - **Escalable**: Capaç de créixer amb les necessitats
 - **Segura**: Protecció de dades sensibles
