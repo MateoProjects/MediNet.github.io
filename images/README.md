@@ -172,6 +172,16 @@ images/
 
 ---
 
-**Total Images Required: 44**
+---
+
+## About Page (about.html)
+
+### Team Members
+- `team-member-1.jpg` - Photo of Dr. Juan R. González (Principal Investigator & Group Leader, BRGE-ISGlobal)
+- `team-member-2.jpg` - Photo of Ramon Mateo (Research Assistant & PhD Student in Bioinformatics, BRGE-ISGlobal)
+
+---
+
+**Total Images Required: 46**
 
 Once you add all images with these exact names, the web documentation will be fully functional and visually rich.

@@ -460,11 +460,13 @@ body {
     display: flex;
     gap: var(--space-md);
     margin-bottom: var(--space-2xl);
+    justify-content: center;
 }
 
 .hero-stats {
     display: flex;
     gap: var(--space-xl);
+    justify-content: center;
 }
 
 .stat-item {
@@ -514,7 +516,7 @@ body {
 }
 
 .section-header h2 {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-3xl);
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--space-md);
@@ -769,6 +771,300 @@ body {
     gap: var(--space-md);
 }
 
+/* Company Section */
+.company-section {
+    padding: var(--space-3xl) 0;
+    background: var(--white);
+}
+
+.company-content {
+    display: grid;
+    gap: var(--space-3xl);
+}
+
+.company-story {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-story h2 {
+    color: var(--text-primary);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+}
+
+.company-story p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-md);
+}
+
+.company-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-xl);
+    margin: var(--space-2xl) 0;
+}
+
+.stat-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--background-subtle);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-card .stat-number {
+    display: block;
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+}
+
+.stat-card .stat-label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+}
+
+.company-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+
+.value-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--background-subtle);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-card .material-icons {
+    color: var(--primary-color);
+    font-size: 48px;
+    margin-bottom: var(--space-md);
+}
+
+.value-card h3 {
+    color: var(--text-primary);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.value-card p {
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+.institutional-links {
+    text-align: center;
+    margin-top: var(--space-2xl);
+}
+
+.institutional-links > p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.links-container {
+    display: flex;
+    gap: var(--space-xl);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.institutional-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.institutional-link:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.institutional-link .material-icons {
+    font-size: 20px;
+}
+
+/* Team Section */
+.team-section {
+    padding: var(--space-3xl) 0;
+    background: var(--background-subtle);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    transition: var(--transition-normal);
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.team-avatar {
+    margin-bottom: var(--space-lg);
+    display: flex;
+    justify-content: center;
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-light);
+    box-shadow: var(--shadow-md);
+}
+
+.team-info h3 {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.team-role {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+}
+
+.team-bio {
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-lg);
+    text-align: left;
+}
+
+.team-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    justify-content: center;
+}
+
+.expertise-tag {
+    background: var(--primary-light);
+    color: var(--white);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 12px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.team-mission {
+    background: var(--white);
+    border-radius: 16px;
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-content h2 {
+    color: var(--text-primary);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.mission-content > p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+}
+
+.value-item {
+    text-align: center;
+}
+
+.value-item .material-icons {
+    color: var(--primary-color);
+    font-size: 48px;
+    margin-bottom: var(--space-md);
+}
+
+.value-item h4 {
+    color: var(--text-primary);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.value-item p {
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Mobile optimization for team section */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .team-card {
+        padding: var(--space-xl);
+    }
+    
+    .team-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .mission-values {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
@@ -843,6 +1139,37 @@ body {
 
 .footer-brand .material-icons {
     color: var(--primary-light);
+}
+
+/* About Page - Team Member Photos - FORCE CIRCULAR */
+.about-team-photo {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid var(--white) !important;
+    box-shadow: 
+        0 8px 32px rgba(25, 118, 210, 0.15),
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    display: block !important;
+}
+
+.about-team-photo:hover {
+    box-shadow: 
+        0 12px 48px rgba(25, 118, 210, 0.25),
+        0 6px 24px rgba(0, 0, 0, 0.15),
+        0 0 0 4px rgba(25, 118, 210, 0.1);
+}
+
+/* Mobile responsiveness for about team photos */
+@media (max-width: 768px) {
+    .about-team-photo {
+        width: 120px !important;
+        height: 120px !important;
+    }
 }
 
 .footer-bottom {
@@ -986,7 +1313,7 @@ body {
     }
     
     .section-header h2 {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-2xl);
     }
     
     .hero-buttons {

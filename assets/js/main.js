@@ -438,8 +438,10 @@ function initImageModal() {
     // Make existing images zoomable
     const images = document.querySelectorAll('img:not(.modal-image)');
     images.forEach(img => {
-        // Skip images that are too small or are icons
-        if (img.width < 100 || img.height < 100 || img.classList.contains('nav-icon')) {
+        // Skip images that are too small, are icons, or are team member photos
+        if (img.width < 100 || img.height < 100 || 
+            img.classList.contains('nav-icon') || 
+            img.classList.contains('about-team-photo')) {
             return;
         }
         
