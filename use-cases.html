@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use Cases - SynapNetica</title>
-    <meta name="description" content="Real use cases of SynapNetica in the healthcare sector: cardiovascular diagnosis, diabetes detection, medical image analysis and more.">
-    
+    <title>Use Case - MediNet</title>
+    <meta name="description" content="Cardiac risk prediction model training use case demonstrating MediNet's federated learning platform capabilities in healthcare.">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
@@ -18,9 +18,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="images/SN_logo.png" alt="SynapNetica Logo" class="nav-brand-logo">
+                <img src="images/MediNet_logo.png" alt="MediNet Logo" class="nav-brand-logo">
                 <span class="nav-brand-text">
-                    <span class="synap">Synap</span><span class="netica">Netica</span>
+                    <span class="synap">Medi</span><span class="netica">Net</span>
                 </span>
             </div>
             <div class="nav-menu">
@@ -48,845 +48,383 @@
             <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Medical Use Cases
-                        <span class="hero-subtitle">Real applications of SynapNetica in the healthcare sector</span>
+                        Use Case
+                        <span class="hero-subtitle">Cardiac Risk Prediction Model Training</span>
                     </h1>
                     <p class="hero-description">
-                        Discover how SynapNetica is transforming medical collaboration through specific use cases
-                        that demonstrate the power of federated learning in real hospital environments.
+                        Discover how MediNet enables researchers to train and validate deep learning models
+                        for heart attack probability prediction while maintaining data privacy across healthcare institutions.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Use Cases Navigation -->
-    <section class="use-cases-nav">
-        <div class="container">
-            <div class="nav-cards">
-                <a href="#cardiovascular" class="nav-card">
-                    <span class="material-icons">favorite</span>
-                    <h3>Cardiovascular Diagnosis</h3>
-                    <p>Collaborative cardiovascular risk prediction</p>
-                </a>
-                <a href="#diabetes" class="nav-card">
-                    <span class="material-icons">bloodtype</span>
-                    <h3>Diabetes Detection</h3>
-                    <p>Early screening of type 2 diabetes</p>
-                </a>
-                <a href="#radiology" class="nav-card">
-                    <span class="material-icons">medical_services</span>
-                    <h3>Radiology Analysis</h3>
-                    <p>Automatic detection of pneumonia in X-rays</p>
-                </a>
-                <a href="#readmission" class="nav-card">
-                    <span class="material-icons">logout</span>
-                    <h3>Readmission Prediction</h3>
-                    <p>Identification of high-risk patients</p>
-                </a>
-                <a href="#personalized" class="nav-card">
-                    <span class="material-icons">person</span>
-                    <h3>Personalized Medicine</h3>
-                    <p>Optimization of oncological treatments</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Study 1: Cardiovascular -->
-    <section id="cardiovascular" class="case-study">
+    <!-- Case Study: Cardiac Risk Prediction -->
+    <section id="cardiac-risk" class="case-study">
         <div class="container">
             <div class="case-header">
                 <span class="material-icons case-icon">favorite</span>
                 <div class="case-title">
-                    <h2>Collaborative Cardiovascular Disease Diagnosis</h2>
-                    <p class="case-subtitle">Multi-hospital consortium for cardiovascular risk prediction</p>
+                    <h2>Cardiac Risk Prediction Model Training</h2>
+                    <p class="case-subtitle">End-to-end deep learning workflow for heart attack probability prediction</p>
                 </div>
             </div>
-            
+
             <div class="case-content">
-                <div class="case-overview">
-                    <div class="overview-stats">
-                        <div class="stat-card">
-                            <span class="material-icons">business</span>
-                            <div>
-                                <h3>5 Hospitals</h3>
-                                <p>2 university, 2 regional, 1 specialized</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">people</span>
-                            <div>
-                                <h3>25,000 Patients</h3>
-                                <p>Aggregated data from multiple populations</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">trending_up</span>
-                            <div>
-                                <h3>89% Accuracy</h3>
-                                <p>15% improvement vs. individual models</p>
-                            </div>
-                        </div>
+                <!-- Objective and Preconditions -->
+                <div class="detail-section">
+                    <h3><span class="material-icons">flag</span> Objective and Preconditions</h3>
+                    <div class="objective-box">
+                        <h4>Main Objective</h4>
+                        <p>Train and validate a deep learning model capable of predicting heart attack probability using the "Heart Rate Attack" dataset available at Hospital X.</p>
                     </div>
-                    
-                    <div class="case-image">
-                        <img src="images/cardiovascular-case-overview.png" alt="Cardiovascular case overview" class="case-img">
-                        <p class="image-caption">Cardiovascular consortium dashboard showing participation of 5 hospitals and performance metrics</p>
+
+                    <div class="preconditions-list">
+                        <h4>Required Preconditions</h4>
+                        <div class="precondition-item">
+                            <span class="material-icons">check_circle</span>
+                            <div>
+                                <strong>Valid Credentials:</strong>
+                                <p>The researcher has valid credentials (username and password) assigned by Hospital X.</p>
+                            </div>
+                        </div>
+                        <div class="precondition-item">
+                            <span class="material-icons">check_circle</span>
+                            <div>
+                                <strong>Platform Access:</strong>
+                                <p>MediNet platform is operational and accessible using credentials provided by the platform administrator at Hospital X.</p>
+                            </div>
+                        </div>
+                        <div class="precondition-item">
+                            <span class="material-icons">check_circle</span>
+                            <div>
+                                <strong>Dataset Ready:</strong>
+                                <p>The "Heart Rate Attack" dataset is pre-loaded, pre-processed, and cataloged within MediNet's data explorer.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="case-details">
-                    <div class="detail-section">
-                        <h3><span class="material-icons">info</span> Clinical Context</h3>
-                        <p>Cardiovascular diseases are the leading cause of death worldwide. Individual hospitals have limited datasets that do not represent complete population diversity, limiting the effectiveness of predictive models.</p>
-                    </div>
+                <!-- Process Flow -->
+                <div class="detail-section">
+                    <h3><span class="material-icons">timeline</span> Process Flow</h3>
+                    <p class="section-intro">The training process follows a structured workflow from authentication to final model validation:</p>
 
-                    <div class="detail-section">
-                        <h3><span class="material-icons">architecture</span> Model Architecture</h3>
-                        <div class="model-architecture">
-                            <div class="arch-layer">
-                                <strong>Input Layer:</strong> 25 clinical variables (ECG, blood tests, medical history)
+                    <div class="process-flow">
+                        <!-- Step 1: Access and Authentication -->
+                        <div class="flow-step">
+                            <div class="flow-step-header">
+                                <div class="step-number">1</div>
+                                <h4>Access and Authentication</h4>
                             </div>
-                            <div class="arch-layer">
-                                <strong>Hidden Layers:</strong> 3 dense layers (128, 64, 32 neurons) with ReLU activation
-                            </div>
-                            <div class="arch-layer">
-                                <strong>Output Layer:</strong> 5-year cardiovascular risk probability (Sigmoid)
+                            <div class="flow-step-content">
+                                <p>The training process begins when the researcher accesses the MediNet platform by validating their credentials.</p>
+                                <div class="step-image-placeholder">
+                                    <img src="images/login-form.png" alt="Researcher logging into MediNet platform with Hospital X credentials" class="case-img">
+                                    <p class="image-caption">Authentication screen with Hospital X credentials validation</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="model-image">
-                            <img src="images/cardiovascular-model-architecture.png" alt="Cardiovascular model architecture" class="case-img">
-                            <p class="image-caption">Neural network design for cardiovascular risk prediction</p>
-                        </div>
-                    </div>
 
-                    <div class="detail-section">
-                        <h3><span class="material-icons">timeline</span> Implementation Process</h3>
-                        <div class="implementation-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-marker">1</div>
-                                <div class="timeline-content">
-                                    <h4>Project Configuration</h4>
-                                    <p>University Hospital A acts as leader, creating the "CardioRisk Consortium" project and defining the base model.</p>
-                                </div>
+                        <!-- Step 2: Dataset Selection -->
+                        <div class="flow-step">
+                            <div class="flow-step-header">
+                                <div class="step-number">2</div>
+                                <h4>Dataset Selection and Validation</h4>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker">2</div>
-                                <div class="timeline-content">
-                                    <h4>Federated Connections</h4>
-                                    <p>Each hospital configures its secure connection with automatic connectivity validation and metadata synchronization.</p>
+                            <div class="flow-step-content">
+                                <p>Once in the control panel, the researcher navigates to the "Datasets" section and selects the "Heart Rate Attack" dataset, validating its accessibility and metadata.</p>
+                                <div class="dataset-details">
+                                    <div class="detail-item">
+                                        <span class="material-icons">storage</span>
+                                        <span><strong>Dataset Name:</strong> Heart Rate Attack</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="material-icons">source</span>
+                                        <span><strong>Location:</strong> Hospital X Data Repository</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="material-icons">check_circle</span>
+                                        <span><strong>Status:</strong> Pre-processed and cataloged</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker">3</div>
-                                <div class="timeline-content">
-                                    <h4>Collaborative Training</h4>
-                                    <p>25 rounds of federated training with real-time monitoring of convergence and contribution from each hospital.</p>
+                                <div class="step-image-placeholder">
+                                    <img src="images/dataset-selection.png" alt="Dataset selection interface showing Heart Rate Attack dataset with metadata and accessibility validation" class="case-img">
+                                    <p class="image-caption">Dataset explorer showing Heart Rate Attack dataset with metadata</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="detail-section">
-                        <h3><span class="material-icons">assessment</span> Results and Benefits</h3>
-                        <div class="results-grid">
-                            <div class="result-item">
-                                <span class="material-icons">trending_up</span>
-                                <div>
-                                    <h4>AUC Improvement</h4>
-                                    <p>From 0.82 (individual models) to 0.89 (federated model)</p>
-                                </div>
+                        <!-- Step 3: Model Design -->
+                        <div class="flow-step">
+                            <div class="flow-step-header">
+                                <div class="step-number">3</div>
+                                <h4>Model Architecture Design</h4>
                             </div>
-                            <div class="result-item">
-                                <span class="material-icons">diversity_3</span>
-                                <div>
-                                    <h4>Greater Diversity</h4>
-                                    <p>Representation of different populations and demographics</p>
+                            <div class="flow-step-content">
+                                <p>The researcher proceeds to the "Model Studio" module. Within this module, they select the "Deep Learning Model" option and design the neural network architecture using the "Model Designer" interface. This action registers the initial model configuration in the platform.</p>
+                                <div class="model-designer-features">
+                                    <div class="feature-box">
+                                        <span class="material-icons">architecture</span>
+                                        <h5>Visual Designer</h5>
+                                        <p>Drag-and-drop interface for creating neural network layers</p>
+                                    </div>
+                                    <div class="feature-box">
+                                        <span class="material-icons">layers</span>
+                                        <h5>Layer Configuration</h5>
+                                        <p>Define activation functions, neuron counts, and connections</p>
+                                    </div>
+                                    <div class="feature-box">
+                                        <span class="material-icons">save</span>
+                                        <h5>Auto-Registration</h5>
+                                        <p>Model configuration automatically saved to platform</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="result-item">
-                                <span class="material-icons">balance</span>
-                                <div>
-                                    <h4>Bias Reduction</h4>
-                                    <p>More generalizable model across different groups</p>
-                                </div>
-                            </div>
-                            <div class="result-item">
-                                <span class="material-icons">security</span>
-                                <div>
-                                    <h4>Regulatory Compliance</h4>
-                                    <p>Data never leaves each individual hospital</p>
+                                <div class="step-image-placeholder">
+                                    <img src="images/model-designer-preview.png" alt="Model Designer interface showing neural network architecture creation with drag-and-drop layers for cardiac risk prediction" class="case-img">
+                                    <p class="image-caption">Model Designer interface with neural network architecture for cardiac risk prediction</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="results-image">
-                            <img src="images/cardiovascular-results-metrics.png" alt="Cardiovascular case results metrics" class="case-img">
-                            <p class="image-caption">Comparative charts showing accuracy improvement and bias reduction</p>
+
+                        <!-- Step 4: Training Configuration -->
+                        <div class="flow-step">
+                            <div class="flow-step-header">
+                                <div class="step-number">4</div>
+                                <h4>Training Configuration</h4>
+                            </div>
+                            <div class="flow-step-content">
+                                <p>Once designed, the model is directed to the "Training/Entrenament" section. Here, the researcher defines the initial hyperparameters and launches the training process.</p>
+                                <div class="hyperparameters-config">
+                                    <h5>Initial Hyperparameters</h5>
+                                    <div class="param-grid">
+                                        <div class="param-item">
+                                            <span class="material-icons">speed</span>
+                                            <div>
+                                                <strong>Learning Rate</strong>
+                                                <p>Controls the step size during optimization</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <span class="material-icons">repeat</span>
+                                            <div>
+                                                <strong>Number of Epochs</strong>
+                                                <p>Complete passes through the training dataset</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <span class="material-icons">functions</span>
+                                            <div>
+                                                <strong>Loss Function</strong>
+                                                <p>Metric to optimize during training</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <span class="material-icons">dynamic_feed</span>
+                                            <div>
+                                                <strong>Batch Size</strong>
+                                                <p>Number of samples processed before model update</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-image-placeholder">
+                                    <img src="images/training-configuration.png" alt="Training configuration panel showing hyperparameter settings including learning rate, epochs, loss function, and batch size" class="case-img">
+                                    <p class="image-caption">Training configuration panel with hyperparameter settings</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Initial Training -->
+                        <div class="flow-step">
+                            <div class="flow-step-header">
+                                <div class="step-number">5</div>
+                                <h4>Initial Training Execution</h4>
+                            </div>
+                            <div class="flow-step-content">
+                                <p>After initiating the training process, MediNet presents performance metrics in the "Results/Analysis" section.</p>
+                                <div class="metrics-display">
+                                    <h5>Performance Metrics</h5>
+                                    <div class="metrics-grid">
+                                        <div class="metric-card">
+                                            <span class="material-icons">trending_down</span>
+                                            <h6>Loss</h6>
+                                            <p>Training and validation loss curves</p>
+                                        </div>
+                                        <div class="metric-card">
+                                            <span class="material-icons">accuracy</span>
+                                            <h6>Accuracy</h6>
+                                            <p>Model prediction accuracy over epochs</p>
+                                        </div>
+                                        <div class="metric-card">
+                                            <span class="material-icons">analytics</span>
+                                            <h6>Error Metrics</h6>
+                                            <p>Additional performance measurements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-image-placeholder">
+                                    <img src="images/real-time-dashboard.png" alt="Training results dashboard showing loss curves, accuracy metrics, and performance analysis after initial training" class="case-img">
+                                    <p class="image-caption">Real-time monitoring dashboard with loss, accuracy, and performance metrics</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Case Study 2: Diabetes -->
-    <section id="diabetes" class="case-study">
-        <div class="container">
-            <div class="case-header">
-                <span class="material-icons case-icon">bloodtype</span>
-                <div class="case-title">
-                    <h2>Early Type 2 Diabetes Detection</h2>
-                    <p class="case-subtitle">Predictive screening in primary care and specialized centers</p>
-                </div>
-            </div>
-            
-            <div class="case-content">
-                <div class="case-overview">
-                    <div class="overview-stats">
-                        <div class="stat-card">
-                            <span class="material-icons">medical_services</span>
-                            <div>
-                                <h3>10 Centers</h3>
-                                <p>8 primary care centers + 2 hospitals</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">group</span>
-                            <div>
-                                <h3>18,500 Patients</h3>
-                                <p>Urban and rural demographic diversity</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">accuracy</span>
-                            <div>
-                                <h3>85% Sensitivity</h3>
-                                <p>92% specificity in detection</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="case-image">
-                        <img src="images/diabetes-screening-dashboard.png" alt="Diabetes screening dashboard" class="case-img">
-                        <p class="image-caption">Screening interface showing patient distribution and detection metrics</p>
-                    </div>
-                </div>
+                <!-- Iteration and Artifact -->
+                <div class="detail-section">
+                    <h3><span class="material-icons">autorenew</span> Iteration and Final Model Validation</h3>
+                    <p class="section-intro">The researcher follows an iterative optimization process to achieve optimal model performance:</p>
 
-                <div class="case-details">
-                    <div class="detail-section">
-                        <h3><span class="material-icons">info</span> Clinical Context</h3>
-                        <p>Type 2 diabetes is frequently diagnosed when complications already exist. Early detection through biochemical markers and risk factors can prevent serious complications and significantly reduce healthcare costs.</p>
-                    </div>
+                    <div class="iteration-flow">
+                        <!-- Analysis Phase -->
+                        <div class="iteration-step">
+                            <div class="iteration-header">
+                                <span class="material-icons">assessment</span>
+                                <h4>Metrics Analysis</h4>
+                            </div>
+                            <p>The researcher analyzes the metrics from the initial training and identifies optimization opportunities. In an iterative optimization process, the researcher decides to adjust the batch size hyperparameter to 32 to observe its impact on model performance.</p>
+                        </div>
 
-                    <div class="detail-section">
-                        <h3><span class="material-icons">data_usage</span> Dataset Characteristics</h3>
-                        <div class="dataset-distribution">
-                            <div class="dataset-item">
-                                <h4>Center A (Rural)</h4>
-                                <p>2,500 patients, average age 58 years</p>
-                                <div class="dataset-bar" style="width: 25%;"></div>
+                        <!-- Optimization Phase -->
+                        <div class="iteration-step">
+                            <div class="iteration-header">
+                                <span class="material-icons">tune</span>
+                                <h4>Hyperparameter Optimization</h4>
                             </div>
-                            <div class="dataset-item">
-                                <h4>Center B (Urban)</h4>
-                                <p>4,200 patients, average age 45 years</p>
-                                <div class="dataset-bar" style="width: 42%;"></div>
+                            <div class="optimization-details">
+                                <div class="optimization-change">
+                                    <strong>Adjustment Made:</strong>
+                                    <div class="change-box">
+                                        <span class="param-label">Batch Size:</span>
+                                        <span class="param-old">Initial Value</span>
+                                        <span class="material-icons arrow">arrow_forward</span>
+                                        <span class="param-new">32</span>
+                                    </div>
+                                    <p class="change-reason"><em>Rationale: Observe impact on model convergence and performance</em></p>
+                                </div>
                             </div>
-                            <div class="dataset-item">
-                                <h4>Center C (Pediatric)</h4>
-                                <p>1,800 patients, average age 28 years</p>
-                                <div class="dataset-bar" style="width: 18%;"></div>
+                            <p>A new training cycle is launched with the adjusted hyperparameters.</p>
+                        </div>
+
+                        <!-- Second Training Phase -->
+                        <div class="iteration-step">
+                            <div class="iteration-header">
+                                <span class="material-icons">replay</span>
+                                <h4>Second Training Cycle</h4>
                             </div>
-                            <div class="dataset-item">
-                                <h4>Other Centers</h4>
-                                <p>10,000 distributed patients</p>
-                                <div class="dataset-bar" style="width: 50%;"></div>
+                            <p>The model is retrained with batch size set to 32. MediNet monitors the training process and generates updated performance metrics.</p>
+                            <div class="step-image-placeholder">
+                                <img src="images/federated-training-progress.png" alt="Comparison dashboard showing improved metrics after batch size optimization to 32, with side-by-side performance charts" class="case-img">
+                                <p class="image-caption">Performance comparison: initial training vs. optimized training with batch size 32</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="detail-section">
-                        <h3><span class="material-icons">psychology</span> Machine Learning Model</h3>
-                        <div class="ml-model-details">
-                            <div class="model-spec">
-                                <h4>Algorithm: Federated Random Forest</h4>
-                                <ul>
-                                    <li><strong>Input variables:</strong> 15 predictors (glucose, HbA1c, BMI, family history)</li>
-                                    <li><strong>Target variable:</strong> Probability of developing diabetes in 2 years</li>
-                                    <li><strong>Configuration:</strong> 100 estimators, maximum depth 10</li>
-                                    <li><strong>Validation:</strong> Federated cross-validation with 10 rounds</li>
-                                </ul>
+                        <!-- Validation Phase -->
+                        <div class="iteration-step final-validation">
+                            <div class="iteration-header">
+                                <span class="material-icons">verified</span>
+                                <h4>Final Model Validation</h4>
                             </div>
-                            <div class="model-image">
-                                <img src="images/diabetes-model-performance.png" alt="Diabetes model performance" class="case-img">
-                                <p class="image-caption">ROC curves and confusion matrices of the diabetes screening model</p>
+                            <p>After completing the second training cycle and reviewing the results, the researcher determines that the model performance is satisfactory and decides that the current version of the model is <strong>Valid</strong>.</p>
+                            <div class="validation-criteria">
+                                <h5>Validation Checklist</h5>
+                                <div class="criteria-list">
+                                    <div class="criteria-item">
+                                        <span class="material-icons">check_circle</span>
+                                        <span>Performance metrics meet expected thresholds</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="material-icons">check_circle</span>
+                                        <span>Loss convergence is stable</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="material-icons">check_circle</span>
+                                        <span>Accuracy improvements observed after optimization</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="material-icons">check_circle</span>
+                                        <span>Model ready for deployment or further validation</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">health_and_safety</span> Clinical Impact</h3>
-                        <div class="clinical-impact">
-                            <div class="impact-metric">
-                                <span class="impact-number">40%</span>
-                                <span class="impact-label">Reduction in late diagnoses</span>
+                            <div class="final-artifact">
+                                <div class="artifact-box">
+                                    <span class="material-icons">workspace_premium</span>
+                                    <div>
+                                        <h5>Final Artifact</h5>
+                                        <p><strong>Validated Deep Learning Model</strong> for cardiac risk prediction, ready for deployment or further clinical validation.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="impact-metric">
-                                <span class="impact-number">78%</span>
-                                <span class="impact-label">Positive predictive value</span>
-                            </div>
-                            <div class="impact-metric">
-                                <span class="impact-number">95%</span>
-                                <span class="impact-label">Negative predictive value</span>
-                            </div>
-                        </div>
-                        <div class="impact-image">
-                            <img src="images/diabetes-clinical-impact.png" alt="Clinical impact of diabetes screening" class="case-img">
-                            <p class="image-caption">Charts showing reduction in late diagnoses and improvement in patient outcomes</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Case Study 3: Radiology -->
-    <section id="radiology" class="case-study">
-        <div class="container">
-            <div class="case-header">
-                <span class="material-icons case-icon">medical_services</span>
-                <div class="case-title">
-                    <h2>Medical Image Analysis (Radiology)</h2>
-                    <p class="case-subtitle">Automatic pneumonia detection in chest X-rays</p>
+                <!-- Key Features Demonstrated -->
+                <div class="detail-section">
+                    <h3><span class="material-icons">stars</span> Key Platform Features Demonstrated</h3>
+                    <div class="features-grid">
+                        <div class="feature-demo">
+                            <span class="material-icons">dataset</span>
+                            <h4>Dataset Management</h4>
+                            <p>Secure access to pre-processed medical datasets with metadata validation and exploration capabilities.</p>
+                        </div>
+                        <div class="feature-demo">
+                            <span class="material-icons">architecture</span>
+                            <h4>Visual Model Designer</h4>
+                            <p>Intuitive drag-and-drop interface for designing deep learning architectures without coding.</p>
+                        </div>
+                        <div class="feature-demo">
+                            <span class="material-icons">settings</span>
+                            <h4>Hyperparameter Configuration</h4>
+                            <p>Comprehensive control over training parameters including learning rate, epochs, loss functions, and batch size.</p>
+                        </div>
+                        <div class="feature-demo">
+                            <span class="material-icons">model_training</span>
+                            <h4>Training Execution</h4>
+                            <p>Automated training workflow with real-time monitoring and performance tracking.</p>
+                        </div>
+                        <div class="feature-demo">
+                            <span class="material-icons">analytics</span>
+                            <h4>Performance Analysis</h4>
+                            <p>Detailed metrics visualization including loss curves, accuracy charts, and error measurements.</p>
+                        </div>
+                        <div class="feature-demo">
+                            <span class="material-icons">autorenew</span>
+                            <h4>Iterative Optimization</h4>
+                            <p>Support for multiple training cycles with hyperparameter tuning and performance comparison.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="case-content">
-                <div class="case-overview">
-                    <div class="overview-stats">
-                        <div class="stat-card">
-                            <span class="material-icons">local_hospital</span>
-                            <div>
-                                <h3>6 Hospitals</h3>
-                                <p>Specialized radiology services</p>
-                            </div>
+
+                <!-- Benefits -->
+                <div class="detail-section benefits-section">
+                    <h3><span class="material-icons">recommend</span> Benefits of MediNet Platform</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <span class="material-icons">security</span>
+                            <h4>Data Privacy</h4>
+                            <p>Medical data remains at Hospital X while enabling model training through federated learning architecture.</p>
                         </div>
-                        <div class="stat-card">
-                            <span class="material-icons">image</span>
-                            <div>
-                                <h3>50,000 Images</h3>
-                                <p>Labeled chest X-rays</p>
-                            </div>
+                        <div class="benefit-card">
+                            <span class="material-icons">code_off</span>
+                            <h4>No Coding Required</h4>
+                            <p>Researchers can design and train complex deep learning models using visual interfaces without programming knowledge.</p>
                         </div>
-                        <div class="stat-card">
+                        <div class="benefit-card">
                             <span class="material-icons">speed</span>
-                            <div>
-                                <h3>&lt;2 Seconds</h3>
-                                <p>Processing time per image</p>
-                            </div>
+                            <h4>Fast Experimentation</h4>
+                            <p>Quick iteration cycles enable researchers to optimize models efficiently through hyperparameter tuning.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="material-icons">verified_user</span>
+                            <h4>Clinical Validation</h4>
+                            <p>Structured workflow from training to validation ensures models meet clinical requirements before deployment.</p>
                         </div>
                     </div>
-                    
-                    <div class="case-image">
-                        <img src="images/radiology-ai-interface.png" alt="Radiological AI interface" class="case-img">
-                        <p class="image-caption">Radiological analysis system showing automatic pneumonia detection with confidence scores</p>
-                    </div>
-                </div>
-
-                <div class="case-details">
-                    <div class="detail-section">
-                        <h3><span class="material-icons">info</span> Clinical Context</h3>
-                        <p>The shortage of specialized radiologists and the need for rapid and accurate interpretation of medical images make AI a valuable tool for imaging diagnosis, especially in emergency services and rural hospitals.</p>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">architecture</span> CNN Architecture</h3>
-                        <div class="cnn-architecture">
-                            <div class="cnn-layer">
-                                <span class="layer-type">Conv2D</span>
-                                <span class="layer-params">32 filters, 3x3, ReLU + MaxPool</span>
-                            </div>
-                            <div class="cnn-arrow">↓</div>
-                            <div class="cnn-layer">
-                                <span class="layer-type">Conv2D</span>
-                                <span class="layer-params">64 filters, 3x3, ReLU + MaxPool</span>
-                            </div>
-                            <div class="cnn-arrow">↓</div>
-                            <div class="cnn-layer">
-                                <span class="layer-type">Conv2D</span>
-                                <span class="layer-params">128 filters, 3x3, ReLU + MaxPool</span>
-                            </div>
-                            <div class="cnn-arrow">↓</div>
-                            <div class="cnn-layer">
-                                <span class="layer-type">Dense</span>
-                                <span class="layer-params">256 neurons + Dropout(0.5)</span>
-                            </div>
-                            <div class="cnn-arrow">↓</div>
-                            <div class="cnn-layer">
-                                <span class="layer-type">Output</span>
-                                <span class="layer-params">1 neuron, Sigmoid (pneumonia/normal)</span>
-                            </div>
-                        </div>
-                        <div class="architecture-image">
-                            <img src="images/cnn-architecture-radiology.png" alt="CNN architecture for radiology" class="case-img">
-                            <p class="image-caption">Visualization of the convolutional network architecture for radiological image analysis</p>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">verified</span> Quality Control</h3>
-                        <div class="quality-controls">
-                            <div class="quality-item">
-                                <span class="material-icons">fact_check</span>
-                                <div>
-                                    <h4>Label Verification</h4>
-                                    <p>Expert review of all labels before training</p>
-                                </div>
-                            </div>
-                            <div class="quality-item">
-                                <span class="material-icons">high_quality</span>
-                                <div>
-                                    <h4>Automatic Exclusion</h4>
-                                    <p>Algorithms to detect and exclude low-quality images</p>
-                                </div>
-                            </div>
-                            <div class="quality-item">
-                                <span class="material-icons">balance</span>
-                                <div>
-                                    <h4>Class Balance</h4>
-                                    <p>Balanced distribution of positive and negative cases</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">integration_instructions</span> Clinical Integration</h3>
-                        <div class="integration-features">
-                            <div class="integration-item">
-                                <h4><span class="material-icons">medical_information</span> DICOM Interface</h4>
-                                <p>Direct integration with hospital PACS systems for automatic analysis of new images.</p>
-                            </div>
-                            <div class="integration-item">
-                                <h4><span class="material-icons">notification_important</span> Automatic Alerts</h4>
-                                <p>Immediate notifications to radiologists for urgent cases or high probability of pneumonia.</p>
-                            </div>
-                            <div class="integration-item">
-                                <h4><span class="material-icons">sort</span> Case Prioritization</h4>
-                                <p>Prioritization system that places suspicious cases at the top of the work list.</p>
-                            </div>
-                        </div>
-                        <div class="integration-image">
-                            <img src="images/radiology-workflow-integration.png" alt="Radiological workflow integration" class="case-img">
-                            <p class="image-caption">Integrated workflow diagram with PACS systems and automatic alerts</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Study 4: Readmission -->
-    <section id="readmission" class="case-study">
-        <div class="container">
-            <div class="case-header">
-                <span class="material-icons case-icon">logout</span>
-                <div class="case-title">
-                    <h2>Hospital Readmission Risk Prediction</h2>
-                    <p class="case-subtitle">Identification of high-risk patients for preventive interventions</p>
-                </div>
-            </div>
-            
-            <div class="case-content">
-                <div class="case-overview">
-                    <div class="overview-stats">
-                        <div class="stat-card">
-                            <span class="material-icons">business</span>
-                            <div>
-                                <h3>6 Hospitals</h3>
-                                <p>4 general + 2 specialized</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">schedule</span>
-                            <div>
-                                <h3>30 Days</h3>
-                                <p>Post-discharge prediction horizon</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">trending_down</span>
-                            <div>
-                                <h3>23% Reduction</h3>
-                                <p>In preventable readmissions</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="case-image">
-                        <img src="images/readmission-prediction-dashboard.png" alt="Readmission prediction dashboard" class="case-img">
-                        <p class="image-caption">Control panel showing high-risk patients and suggested preventive interventions</p>
-                    </div>
-                </div>
-
-                <div class="case-details">
-                    <div class="detail-section">
-                        <h3><span class="material-icons">info</span> Clinical Context</h3>
-                        <p>Unplanned hospital readmissions are costly and frequently preventable. An accurate predictive model can identify high-risk patients, allowing the implementation of preventive interventions before hospital discharge.</p>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">dataset</span> Predictive Variables</h3>
-                        <div class="variables-grid">
-                            <div class="variable-category">
-                                <h4><span class="material-icons">person</span> Demographics</h4>
-                                <ul>
-                                    <li>Age, sex, zip code</li>
-                                    <li>Socioeconomic status</li>
-                                    <li>Housing situation</li>
-                                </ul>
-                            </div>
-                            <div class="variable-category">
-                                <h4><span class="material-icons">medical_information</span> Clinical</h4>
-                                <ul>
-                                    <li>Primary diagnosis, comorbidities</li>
-                                    <li>Charlson index</li>
-                                    <li>Vital signs at discharge</li>
-                                </ul>
-                            </div>
-                            <div class="variable-category">
-                                <h4><span class="material-icons">local_hospital</span> Hospitalization</h4>
-                                <ul>
-                                    <li>Length of stay</li>
-                                    <li>ICU admission</li>
-                                    <li>Procedures performed</li>
-                                </ul>
-                            </div>
-                            <div class="variable-category">
-                                <h4><span class="material-icons">medication</span> Medication</h4>
-                                <ul>
-                                    <li>Number of prescribed drugs</li>
-                                    <li>Drug interactions</li>
-                                    <li>Medication changes</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">psychology</span> Gradient Boosting Model</h3>
-                        <div class="gbm-details">
-                            <div class="model-config">
-                                <h4>Model Configuration</h4>
-                                <div class="config-grid">
-                                    <div class="config-item">
-                                        <strong>Algorithm:</strong> Federated Gradient Boosting Machine (GBM)
-                                    </div>
-                                    <div class="config-item">
-                                        <strong>Features:</strong> 42 normalized variables
-                                    </div>
-                                    <div class="config-item">
-                                        <strong>Estimators:</strong> 100 with maximum depth 6
-                                    </div>
-                                    <div class="config-item">
-                                        <strong>Learning Rate:</strong> 0.1 for stable convergence
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="model-image">
-                                <img src="images/gbm-readmission-performance.png" alt="GBM model performance" class="case-img">
-                                <p class="image-caption">Performance and calibration curves of the readmission prediction model</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">health_and_safety</span> Preventive Interventions</h3>
-                        <div class="interventions-grid">
-                            <div class="intervention-item">
-                                <span class="material-icons">call</span>
-                                <div>
-                                    <h4>Telephone Follow-up</h4>
-                                    <p>Scheduled calls to high-risk patients for symptom monitoring</p>
-                                </div>
-                            </div>
-                            <div class="intervention-item">
-                                <span class="material-icons">home_health</span>
-                                <div>
-                                    <h4>Home Visits</h4>
-                                    <p>Specialized nursing for on-site follow-up of critical patients</p>
-                                </div>
-                            </div>
-                            <div class="intervention-item">
-                                <span class="material-icons">connect_without_contact</span>
-                                <div>
-                                    <h4>Primary Care Coordination</h4>
-                                    <p>Direct communication with primary care physicians</p>
-                                </div>
-                            </div>
-                            <div class="intervention-item">
-                                <span class="material-icons">school</span>
-                                <div>
-                                    <h4>Patient Education</h4>
-                                    <p>Personalized educational programs on condition management</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="interventions-image">
-                            <img src="images/readmission-interventions-workflow.png" alt="Preventive interventions workflow" class="case-img">
-                            <p class="image-caption">Automated workflow of interventions based on predicted risk level</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Study 5: Personalized Medicine -->
-    <section id="personalized" class="case-study">
-        <div class="container">
-            <div class="case-header">
-                <span class="material-icons case-icon">person</span>
-                <div class="case-title">
-                    <h2>Personalized Treatment Optimization</h2>
-                    <p class="case-subtitle">Precision medicine in oncology through multi-modal models</p>
-                </div>
-            </div>
-            
-            <div class="case-content">
-                <div class="case-overview">
-                    <div class="overview-stats">
-                        <div class="stat-card">
-                            <span class="material-icons">science</span>
-                            <div>
-                                <h3>5 Centers</h3>
-                                <p>3 oncology hospitals + 2 research centers</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">biotech</span>
-                            <div>
-                                <h3>Multi-modal Data</h3>
-                                <p>Genomics, histopathology, clinical data</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="material-icons">trending_up</span>
-                            <div>
-                                <h3>+15% Response</h3>
-                                <p>Improvement in objective response rate</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="case-image">
-                        <img src="images/personalized-medicine-dashboard.png" alt="Personalized medicine dashboard" class="case-img">
-                        <p class="image-caption">Personalized treatment recommendation system showing molecular profiles and therapeutic options</p>
-                    </div>
-                </div>
-
-                <div class="case-details">
-                    <div class="detail-section">
-                        <h3><span class="material-icons">info</span> Clinical Context</h3>
-                        <p>Precision medicine requires models that consider individual variability in treatment response. Genomic, histopathological and clinical data from multiple institutions are essential for developing effective personalization algorithms.</p>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">storage</span> Multi-modal Data</h3>
-                        <div class="multimodal-data">
-                            <table class="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Data Type</th>
-                                        <th>Samples</th>
-                                        <th>Features</th>
-                                        <th>Format</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Gene expression</td>
-                                        <td>2,500</td>
-                                        <td>20,000</td>
-                                        <td>NumPy arrays</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Histological images</td>
-                                        <td>1,800</td>
-                                        <td>CNN features</td>
-                                        <td>DICOM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Clinical data</td>
-                                        <td>3,200</td>
-                                        <td>45</td>
-                                        <td>Structured CSV</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Treatment response</td>
-                                        <td>2,100</td>
-                                        <td>12</td>
-                                        <td>JSON metadata</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">architecture</span> Multi-modal Architecture</h3>
-                        <div class="multimodal-architecture">
-                            <div class="branch-container">
-                                <div class="branch-item">
-                                    <h4><span class="material-icons">biotech</span> Genomic Branch</h4>
-                                    <p>Dense layers to process gene expression of 20,000 variables</p>
-                                </div>
-                                <div class="branch-item">
-                                    <h4><span class="material-icons">image</span> Image Branch</h4>
-                                    <p>Specialized CNN for histopathology analysis</p>
-                                </div>
-                                <div class="branch-item">
-                                    <h4><span class="material-icons">medical_information</span> Clinical Branch</h4>
-                                    <p>Gradient boosting for structured variables</p>
-                                </div>
-                            </div>
-                            <div class="fusion-layer">
-                                <h4><span class="material-icons">merge</span> Late Fusion</h4>
-                                <p>Attention mechanism that combines outputs from the three branches</p>
-                            </div>
-                        </div>
-                        <div class="architecture-image">
-                            <img src="images/multimodal-architecture-oncology.png" alt="Multi-modal architecture for oncology" class="case-img">
-                            <p class="image-caption">Multi-modal architecture design with specialized branches and late fusion</p>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">recommend</span> Recommendation System</h3>
-                        <div class="recommendation-workflow">
-                            <div class="workflow-step">
-                                <div class="workflow-number">1</div>
-                                <div class="workflow-content">
-                                    <h4>Patient Clustering</h4>
-                                    <p>Grouping based on molecular profile and clinical characteristics</p>
-                                </div>
-                            </div>
-                            <div class="workflow-step">
-                                <div class="workflow-number">2</div>
-                                <div class="workflow-content">
-                                    <h4>Response Prediction</h4>
-                                    <p>Efficacy estimation for each available therapeutic option</p>
-                                </div>
-                            </div>
-                            <div class="workflow-step">
-                                <div class="workflow-number">3</div>
-                                <div class="workflow-content">
-                                    <h4>Multi-objective Optimization</h4>
-                                    <p>Balance between therapeutic efficacy and expected toxicity</p>
-                                </div>
-                            </div>
-                            <div class="workflow-step">
-                                <div class="workflow-number">4</div>
-                                <div class="workflow-content">
-                                    <h4>Treatment Ranking</h4>
-                                    <p>Ordered list of personalized options for each patient</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3><span class="material-icons">verified</span> Clinical Validation</h3>
-                        <div class="validation-results">
-                            <div class="validation-metric">
-                                <div class="metric-icon">
-                                    <span class="material-icons">trending_up</span>
-                                </div>
-                                <div class="metric-content">
-                                    <h4>+15% Objective Response</h4>
-                                    <p>Significant improvement vs. standard treatment in retrospective study</p>
-                                </div>
-                            </div>
-                            <div class="validation-metric">
-                                <div class="metric-icon">
-                                    <span class="material-icons">trending_down</span>
-                                </div>
-                                <div class="metric-content">
-                                    <h4>-20% Adverse Effects</h4>
-                                    <p>Reduction in grade 3-4 toxicity through personalized selection</p>
-                                </div>
-                            </div>
-                            <div class="validation-metric">
-                                <div class="metric-icon">
-                                    <span class="material-icons">schedule</span>
-                                </div>
-                                <div class="metric-content">
-                                    <h4>+8 Months Survival</h4>
-                                    <p>Increase in median overall survival</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="validation-image">
-                            <img src="images/oncology-clinical-validation.png" alt="Clinical validation in oncology" class="case-img">
-                            <p class="image-caption">Clinical validation results showing improvements in response and survival</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Summary -->
-    <section class="benefits-summary">
-        <div class="container">
-            <div class="section-header">
-                <h2>Cross-cutting Benefits of SynapNetica</h2>
-                <p class="section-subtitle">Advantages that federated learning brings to all use cases</p>
-            </div>
-            
-            <div class="benefits-grid">
-                <div class="benefit-category">
-                    <span class="material-icons benefit-icon">science</span>
-                    <h3>Scientific and Clinical</h3>
-                    <ul>
-                        <li>More robust models with greater data diversity</li>
-                        <li>Reduction of population and institutional biases</li>
-                        <li>Automatic external validation in multiple cohorts</li>
-                        <li>Acceleration of biomedical research</li>
-                    </ul>
-                </div>
-
-                <div class="benefit-category">
-                    <span class="material-icons benefit-icon">gavel</span>
-                    <h3>Ethical and Regulatory</h3>
-                    <ul>
-                        <li>Absolute preservation of data privacy</li>
-                        <li>Automatic compliance with regulations (GDPR, HIPAA)</li>
-                        <li>Transparency in model development</li>
-                        <li>Complete process auditability</li>
-                    </ul>
-                </div>
-
-                <div class="benefit-category">
-                    <span class="material-icons benefit-icon">savings</span>
-                    <h3>Economic and Operational</h3>
-                    <ul>
-                        <li>Reduction in model development costs</li>
-                        <li>Efficient sharing of computational resources</li>
-                        <li>Standardization of protocols and methodologies</li>
-                        <li>Scalability for mass adoption</li>
-                    </ul>
-                </div>
-
-                <div class="benefit-category">
-                    <span class="material-icons benefit-icon">public</span>
-                    <h3>Social and Public Health</h3>
-                    <ul>
-                        <li>Democratization of access to advanced medical AI</li>
-                        <li>Reduction of healthcare inequalities</li>
-                        <li>Improvement of population health outcomes</li>
-                        <li>Increased public trust in AI systems</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -896,12 +434,12 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Inspired by These Applications?</h2>
-                <p>These use cases demonstrate the transformative potential of SynapNetica in the healthcare sector</p>
+                <h2>Ready to Start Your Own Research?</h2>
+                <p>MediNet makes cardiac risk prediction and medical AI research accessible to healthcare professionals</p>
                 <div class="cta-buttons">
                     <a href="user-guide.html" class="btn btn-primary btn-large">
                         <span class="material-icons">play_arrow</span>
-                        Get Started with SynapNetica
+                        Get Started with MediNet
                     </a>
                     <a href="features.html" class="btn btn-secondary btn-large">
                         <span class="material-icons">info</span>
@@ -918,9 +456,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <img src="images/SN_logo.png" alt="SynapNetica Logo" class="footer-brand-logo">
+                        <img src="images/MediNet_logo.png" alt="MediNet Logo" class="footer-brand-logo">
                         <span class="footer-brand-text">
-                            <span class="synap">Synap</span><span class="netica">Netica</span>
+                            <span class="synap">Medi</span><span class="netica">Net</span>
                         </span>
                     </div>
                     <p>Federated learning platform for the healthcare sector</p>
@@ -930,7 +468,7 @@
                     <ul>
                         <li><a href="features.html">Features</a></li>
                         <li><a href="user-guide.html">User Guide</a></li>
-                        <!--<li><a href="use-cases.html">Use Cases</a></li>-->
+                        <li><a href="use-cases.html">Use Cases</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -951,7 +489,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SynapNetica. Designed to transform medical collaboration.</p>
+                <p>&copy; 2025 MediNet. Designed to transform medical collaboration.</p>
             </div>
         </div>
     </footer>
@@ -962,60 +500,9 @@
 </html>
 
 <style>
-/* Additional styles for use cases page */
-.use-cases-nav {
-    padding: var(--space-xl) 0;
-    background: var(--gray-50);
-}
-
-.nav-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-}
-
-.nav-card {
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    text-align: center;
-    transition: var(--transition-normal);
-    box-shadow: var(--shadow-sm);
-    border: 2px solid transparent;
-}
-
-.nav-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
-}
-
-.nav-card .material-icons {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: var(--space-md);
-}
-
-.nav-card h3 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-sm);
-}
-
-.nav-card p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-}
-
+/* Use Cases Page Styles */
 .case-study {
     padding: var(--space-3xl) 0;
-    border-bottom: 1px solid var(--gray-200);
-}
-
-.case-study:nth-child(even) {
-    background: var(--gray-50);
 }
 
 .case-header {
@@ -1046,56 +533,8 @@
     color: var(--gray-600);
 }
 
-.case-overview {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
-    align-items: center;
-    margin-bottom: var(--space-3xl);
-}
-
-.overview-stats {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
-}
-
-.stat-card {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.stat-card .material-icons {
-    font-size: 2.5rem;
-    color: var(--secondary-color);
-}
-
-.stat-card h3 {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: var(--space-xs);
-}
-
-.stat-card p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-}
-
-.case-img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-lg);
-}
-
 .detail-section {
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
 }
 
 .detail-section h3 {
@@ -1110,541 +549,93 @@
 
 .detail-section h3 .material-icons {
     color: var(--primary-color);
+    font-size: 2rem;
 }
 
-.detail-section p {
+.section-intro {
     font-size: var(--font-size-lg);
     color: var(--gray-600);
+    margin-bottom: var(--space-xl);
     line-height: 1.7;
-    margin-bottom: var(--space-lg);
 }
 
-.model-architecture {
-    background: var(--gray-50);
-    padding: var(--space-lg);
+.objective-box {
+    background: var(--primary-color-light);
+    padding: var(--space-xl);
     border-radius: var(--radius-lg);
-    margin: var(--space-lg) 0;
-}
-
-.arch-layer {
-    padding: var(--space-md);
-    margin-bottom: var(--space-sm);
-    background: var(--white);
-    border-radius: var(--radius-md);
+    margin-bottom: var(--space-xl);
     border-left: 4px solid var(--primary-color);
 }
 
-.arch-layer:last-child {
-    margin-bottom: 0;
-}
-
-.implementation-timeline {
-    position: relative;
-    padding-left: var(--space-2xl);
-}
-
-.implementation-timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--primary-color);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: var(--space-xl);
-}
-
-.timeline-marker {
-    position: absolute;
-    left: -32px;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-}
-
-.timeline-content h4 {
+.objective-box h4 {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--gray-900);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
-.timeline-content p {
-    color: var(--gray-600);
-    margin: 0;
+.objective-box p {
+    color: var(--gray-700);
+    line-height: 1.7;
 }
 
-.results-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
+.preconditions-list h4 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-md);
 }
 
-.result-item {
+.precondition-item {
     display: flex;
     align-items: flex-start;
     gap: var(--space-md);
     background: var(--white);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
     box-shadow: var(--shadow-sm);
 }
 
-.result-item .material-icons {
-    font-size: 2rem;
+.precondition-item .material-icons {
     color: var(--success-color);
+    font-size: 1.5rem;
     margin-top: var(--space-xs);
 }
 
-.result-item h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
+.precondition-item strong {
+    display: block;
     color: var(--gray-900);
+    font-weight: 600;
     margin-bottom: var(--space-xs);
 }
 
-.result-item p {
+.precondition-item p {
     color: var(--gray-600);
-    font-size: var(--font-size-sm);
     margin: 0;
 }
 
-.dataset-distribution {
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    margin: var(--space-lg) 0;
-}
-
-.dataset-item {
-    margin-bottom: var(--space-md);
-}
-
-.dataset-item h4 {
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-xs);
-}
-
-.dataset-item p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--space-sm);
-}
-
-.dataset-bar {
-    height: 8px;
-    background: var(--primary-color);
-    border-radius: 4px;
-    transition: var(--transition-normal);
-}
-
-.ml-model-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
-    align-items: flex-start;
-}
-
-.model-spec {
-    background: var(--gray-50);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-}
-
-.model-spec h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-md);
-}
-
-.model-spec ul {
-    list-style: none;
-    padding: 0;
-}
-
-.model-spec li {
-    padding: var(--space-sm) 0;
-    color: var(--gray-700);
-    border-bottom: 1px solid var(--gray-200);
-}
-
-.model-spec li:last-child {
-    border-bottom: none;
-}
-
-.clinical-impact {
+.process-flow {
     display: flex;
-    justify-content: space-around;
-    margin: var(--space-lg) 0;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+.flow-step {
     background: var(--white);
-    padding: var(--space-2xl);
     border-radius: var(--radius-xl);
+    padding: var(--space-xl);
     box-shadow: var(--shadow-md);
 }
 
-.impact-metric {
-    text-align: center;
-}
-
-.impact-number {
-    display: block;
-    font-size: var(--font-size-4xl);
-    font-weight: 800;
-    color: var(--success-color);
-    margin-bottom: var(--space-sm);
-}
-
-.impact-label {
-    font-size: var(--font-size-sm);
-    color: var(--gray-700);
-    font-weight: 600;
-}
-
-.cnn-architecture {
+.flow-step-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: var(--white);
-    padding: var(--space-2xl);
-    border-radius: var(--radius-xl);
-    margin: var(--space-lg) 0;
-}
-
-.cnn-layer {
-    background: var(--gray-50);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    text-align: center;
-    min-width: 300px;
-    border: 2px solid var(--primary-color);
-}
-
-.layer-type {
-    display: block;
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: var(--space-xs);
-}
-
-.layer-params {
-    font-size: var(--font-size-sm);
-    color: var(--gray-700);
-}
-
-.cnn-arrow {
-    font-size: var(--font-size-2xl);
-    color: var(--primary-color);
-    margin: var(--space-md) 0;
-}
-
-.quality-controls {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.quality-item {
-    display: flex;
-    align-items: flex-start;
     gap: var(--space-md);
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-lg);
 }
 
-.quality-item .material-icons {
-    font-size: 2rem;
-    color: var(--info-color);
-    margin-top: var(--space-xs);
-}
-
-.quality-item h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-xs);
-}
-
-.quality-item p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-    margin: 0;
-}
-
-.integration-features {
-    display: grid;
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.integration-item {
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.integration-item h4 {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-sm);
-}
-
-.integration-item h4 .material-icons {
-    color: var(--secondary-color);
-}
-
-.integration-item p {
-    color: var(--gray-600);
-    margin: 0;
-}
-
-.variables-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.variable-category {
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.variable-category h4 {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-md);
-}
-
-.variable-category h4 .material-icons {
-    color: var(--primary-color);
-}
-
-.variable-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.variable-category li {
-    padding: var(--space-xs) 0;
-    color: var(--gray-700);
-    font-size: var(--font-size-sm);
-}
-
-.gbm-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
-    align-items: flex-start;
-}
-
-.model-config {
-    background: var(--gray-50);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-}
-
-.model-config h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-md);
-}
-
-.config-grid {
-    display: grid;
-    gap: var(--space-sm);
-}
-
-.config-item {
-    padding: var(--space-sm);
-    background: var(--white);
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-sm);
-    color: var(--gray-700);
-}
-
-.config-item strong {
-    color: var(--gray-900);
-}
-
-.interventions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.intervention-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.intervention-item .material-icons {
-    font-size: 2rem;
-    color: var(--secondary-color);
-    margin-top: var(--space-xs);
-}
-
-.intervention-item h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-xs);
-}
-
-.intervention-item p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-    margin: 0;
-}
-
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: var(--space-lg) 0;
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
-
-.data-table th,
-.data-table td {
-    padding: var(--space-md);
-    text-align: left;
-    border-bottom: 1px solid var(--gray-200);
-}
-
-.data-table th {
-    background: var(--gray-50);
-    font-weight: 600;
-    color: var(--gray-900);
-}
-
-.data-table td {
-    color: var(--gray-700);
-}
-
-.multimodal-architecture {
-    background: var(--white);
-    padding: var(--space-2xl);
-    border-radius: var(--radius-xl);
-    margin: var(--space-lg) 0;
-}
-
-.branch-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-lg);
-    margin-bottom: var(--space-xl);
-}
-
-.branch-item {
-    background: var(--gray-50);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    text-align: center;
-    border: 2px solid var(--primary-color);
-}
-
-.branch-item h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: var(--space-sm);
-}
-
-.branch-item h4 .material-icons {
-    color: var(--primary-color);
-}
-
-.branch-item p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-    margin: 0;
-}
-
-.fusion-layer {
-    background: var(--secondary-color);
-    color: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    text-align: center;
-}
-
-.fusion-layer h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    margin-bottom: var(--space-sm);
-}
-
-.fusion-layer p {
-    margin: 0;
-    opacity: 0.9;
-}
-
-.recommendation-workflow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.workflow-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: var(--white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.workflow-number {
+.step-number {
     width: 50px;
     height: 50px;
     background: var(--primary-color);
@@ -1655,195 +646,354 @@
     justify-content: center;
     font-size: var(--font-size-xl);
     font-weight: 700;
-    margin-bottom: var(--space-md);
+    flex-shrink: 0;
 }
 
-.workflow-content h4 {
-    font-size: var(--font-size-lg);
+.flow-step-header h4 {
+    font-size: var(--font-size-xl);
     font-weight: 600;
     color: var(--gray-900);
-    margin-bottom: var(--space-sm);
 }
 
-.workflow-content p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
-    margin: 0;
+.flow-step-content p {
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
 }
 
-.validation-results {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-lg);
+.dataset-details,
+.model-designer-features,
+.hyperparameters-config,
+.metrics-display {
+    background: var(--gray-50);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
     margin: var(--space-lg) 0;
 }
 
-.validation-metric {
+.dataset-details h5,
+.hyperparameters-config h5,
+.metrics-display h5 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    color: var(--gray-700);
+}
+
+.detail-item .material-icons {
+    color: var(--primary-color);
+}
+
+.model-designer-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.feature-box {
+    background: var(--white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.feature-box .material-icons {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.feature-box h5 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-xs);
+}
+
+.feature-box p {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin: 0;
+}
+
+.param-grid,
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.param-item,
+.metric-card {
     display: flex;
     align-items: flex-start;
+    gap: var(--space-sm);
+    background: var(--white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+}
+
+.param-item .material-icons,
+.metric-card .material-icons {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.param-item strong,
+.metric-card h6 {
+    display: block;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-xs);
+}
+
+.param-item p,
+.metric-card p {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin: 0;
+}
+
+.step-image-placeholder {
+    margin-top: var(--space-lg);
+}
+
+.case-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin-top: var(--space-sm);
+    font-style: italic;
+}
+
+.iteration-flow {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.iteration-step {
+    background: var(--gray-50);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.iteration-step.final-validation {
+    background: var(--success-color-light);
+    border: 2px solid var(--success-color);
+}
+
+.iteration-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.iteration-header .material-icons {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.iteration-header h4 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.iteration-step p {
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.optimization-details {
+    background: var(--white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin: var(--space-md) 0;
+}
+
+.change-box {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+    margin: var(--space-sm) 0;
+}
+
+.param-label {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.param-old {
+    color: var(--error-color);
+    text-decoration: line-through;
+}
+
+.arrow {
+    color: var(--primary-color);
+}
+
+.param-new {
+    color: var(--success-color);
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+}
+
+.change-reason {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin-top: var(--space-sm);
+}
+
+.validation-criteria h5 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.criteria-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    background: var(--white);
+    border-radius: var(--radius-md);
+}
+
+.criteria-item .material-icons {
+    color: var(--success-color);
+}
+
+.final-artifact {
+    margin-top: var(--space-lg);
+}
+
+.artifact-box {
+    display: flex;
+    align-items: center;
     gap: var(--space-md);
     background: var(--white);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--success-color);
 }
 
-.metric-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--success-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+.artifact-box .material-icons {
+    font-size: 3rem;
+    color: var(--success-color);
 }
 
-.metric-icon .material-icons {
-    color: var(--white);
-    font-size: 1.5rem;
-}
-
-.metric-content h4 {
+.artifact-box h5 {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--space-xs);
 }
 
-.metric-content p {
-    color: var(--gray-600);
-    font-size: var(--font-size-sm);
+.artifact-box p {
+    color: var(--gray-700);
     margin: 0;
 }
 
-.benefits-summary {
-    padding: var(--space-3xl) 0;
-    background: var(--gray-50);
-}
-
+.features-grid,
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
 }
 
-.benefit-category {
+.feature-demo,
+.benefit-card {
     background: var(--white);
     padding: var(--space-xl);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
 }
 
-.benefit-category:hover {
+.feature-demo:hover,
+.benefit-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
-.benefit-icon {
-    font-size: 3rem !important;
+.feature-demo .material-icons,
+.benefit-card .material-icons {
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: var(--space-md);
 }
 
-.benefit-category h3 {
-    font-size: var(--font-size-xl);
+.feature-demo h4,
+.benefit-card h4 {
+    font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--gray-900);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
-.benefit-category ul {
-    list-style: none;
-    padding: 0;
+.feature-demo p,
+.benefit-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
 }
 
-.benefit-category li {
-    padding: var(--space-sm) 0;
-    color: var(--gray-700);
-    font-size: var(--font-size-sm);
-}
-
-.benefit-category li:before {
-    content: "✓";
-    color: var(--success-color);
-    font-weight: bold;
-    width: 1em;
-    margin-right: var(--space-sm);
+.benefits-section {
+    background: var(--gray-50);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
 }
 
 @media (max-width: 768px) {
     .case-header {
         flex-direction: column;
         text-align: center;
-        gap: var(--space-md);
     }
-    
-    .case-overview {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
-    }
-    
-    .overview-stats {
-        order: 2;
-    }
-    
-    .nav-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .results-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .clinical-impact {
+
+    .flow-step-header {
         flex-direction: column;
-        gap: var(--space-lg);
+        text-align: center;
     }
-    
-    .ml-model-details {
-        grid-template-columns: 1fr;
-    }
-    
-    .cnn-architecture {
-        padding: var(--space-lg);
-    }
-    
-    .cnn-layer {
-        min-width: auto;
-    }
-    
-    .quality-controls {
-        grid-template-columns: 1fr;
-    }
-    
-    .variables-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .gbm-details {
-        grid-template-columns: 1fr;
-    }
-    
-    .interventions-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .branch-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .recommendation-workflow {
-        grid-template-columns: 1fr;
-    }
-    
-    .validation-results {
-        grid-template-columns: 1fr;
-    }
-    
+
+    .model-designer-features,
+    .param-grid,
+    .metrics-grid,
+    .features-grid,
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+
+    .change-box {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 </style>
